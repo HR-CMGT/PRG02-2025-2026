@@ -302,7 +302,7 @@ alle **lesopdrachten** en voorbeelden. Het tweede project is de **werkmap** waar
 uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus 
 gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 
-Dit zijn losse projecten die je ook log opent in PHPStorm. Je hebt straks dus drie projecten openstaan in PHPStorm in 
+Dit zijn losse projecten die je ook los opent in PHPStorm. Je hebt straks dus drie projecten openstaan in PHPStorm in 
 drie verschillende vensters.
 
 ## Lesopdrachten
