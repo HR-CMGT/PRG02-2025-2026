@@ -89,4 +89,7 @@ Verder werken
 **Albumfoto toevoegen**
 
 > Voeg een foto van het album toe tijdens de CREATE van een album. Hiervoor kan je hulp vragen aan AI met het onderstaande prompt. Zet de assistent in de 'Ask' modus.
-> Prompt: I want to be able to upload an image when creating a music album. On the create page i want to add the option to add a file (image). Can you tell me in text how to handle the steps to upload an image fot the album?
+
+> **Prompt**
+> 
+> *I want to be able to upload an image when creating a music album. On the create page i want to add the option to add a file (image). Can you tell me in text how to handle the steps to upload an image fot the album?*
