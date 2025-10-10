@@ -2,7 +2,7 @@
 
 [Installatiehandleiding](./Installatie)
 
-[Link naar Brightspace](https://brightspace.hr.nl/d2l/le/lessons/138307/units/542383)
+[Link naar Brightspace](https://brightspace.hr.nl/d2l/le/lessons/192816/units/827678)
 
 Hier vind je alle informatie, lesopdrachten, oefeningen, startcode en uitwerkingen voor programmeren 2.
 Binnen deze cursus leer je CRUD functionaliteit bouwen in een website met behulp van [PHP](https://www.php.net/).
