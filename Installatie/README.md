@@ -1,25 +1,26 @@
     Installatiestappen webserver en IDE
 
-# Inhoud 
+# Inhoud
 
 - [Download](#Download)
 - [Jetbrains Account](#jetbrains-account)
 - [Installatie](#installatie)
-  - [GIT](#git)
-  - [Laravel Herd](#installatie-laravel-herd)
-    - [Configuratie Herd](#configuratie-herd)
-  - [Jetbrains Toolbox](#jetbrains-toolbox)
-  - [PHPStorm](#phpstorm)
-  - [DBngin](#dbngin)
-    - [Database toevoegen](#databaseserver-toevoegen)
-    - [PHPMyAdmin toevoegen](#phpmyadmin-toevoegen)
+    - [GIT](#git)
+    - [Laravel Herd](#installatie-laravel-herd)
+        - [Configuratie Herd](#configuratie-herd)
+    - [Jetbrains Toolbox](#jetbrains-toolbox)
+    - [PHPStorm](#phpstorm)
+        - [AI assistant](#ai-assistant)
+    - [DBngin](#dbngin)
+        - [Database toevoegen](#databaseserver-toevoegen)
+        - [PHPMyAdmin toevoegen](#phpmyadmin-toevoegen)
 - [PHP Projecten](#php-projecten)
-  - [Lesopdrachten](#lesopdrachten)
-  - [Werkmap](#werkmap)
-  - [Eindopdracht](#eindopdracht)
+    - [Lesopdrachten](#lesopdrachten)
+    - [Werkmap](#werkmap)
+    - [Eindopdracht](#eindopdracht)
 - [[OPTIONEEL] GitHub Student Developer Pack](#OPTIONEEL-github-student-developer-pack)
-  - [Domeinnaam](#domeinnaam)
-  - [Cloud Hosting](#cloud-hosting)
+    - [Domeinnaam](#domeinnaam)
+    - [Cloud Hosting](#cloud-hosting)
 
 --------------------
 
@@ -37,8 +38,8 @@ handleiding.
 
 # Jetbrains Account
 
-Jetbrains biedt studenten de mogelijkheid, zolang je studeert, om gratis gebruik te maken 
-van hun software. Hiervoor moet je een account aanmaken op de 
+Jetbrains biedt studenten de mogelijkheid, zolang je studeert, om gratis gebruik te maken
+van hun software. Hiervoor moet je een account aanmaken op de
 [Jetbrains website](https://www.jetbrains.com/shop/eform/students). Gebruik hiervoor je e-mailadres
 van de Hogeschool Rotterdam.
 
@@ -85,26 +86,26 @@ _Hiervoor kies je een locatie op je harde schijf welke **buiten** je OneDrive of
 - Gebruik niet de default folder maar kies de eerder aangemaakte **Development** folder.
   ![herd-folder.png](images/herd/herd-folder.png)
 
-- Als laatste stap heb je de mogelijkheid om de installatie te voltooien. 
-  - [WINDOWS] Vink de twee opties aan
-    - _Automatically launch Herd on system startup_
-    - _Launch Herd minimized as system tray application_
+- Als laatste stap heb je de mogelijkheid om de installatie te voltooien.
+    - [WINDOWS] Vink de twee opties aan
+        - _Automatically launch Herd on system startup_
+        - _Launch Herd minimized as system tray application_
 
-      ![Complete setup Windows](images/herd/complete-setup-windows.png)
-  - [MAC] Vink de optie aan.
-    - _Launch Herd on system startup_
+          ![Complete setup Windows](images/herd/complete-setup-windows.png)
+    - [MAC] Vink de optie aan.
+        - _Launch Herd on system startup_
 
-      ![Complete setup Mac](images/herd/complete-setup-mac.png)
+          ![Complete setup Mac](images/herd/complete-setup-mac.png)
 - Bekijk de settings van Herd.
-  - [WINDOWS] Open Herd dashboard
-    - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
-    - Hiermee open je het Herd dashboard.
+    - [WINDOWS] Open Herd dashboard
+        - In je system system tray (rechtsonderin) zie je een icoon van Herd. Klik hierop.
+        - Hiermee open je het Herd dashboard.
 
-      ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
-  - [MAC] Open Herd Menu
-    - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
-      
-      ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
+          ![dashboard-system-tray.png](images/herd/dashboard-system-tray.png)
+    - [MAC] Open Herd Menu
+        - Open het Herd menu via het icoon in de Menu Bar (rechtsboven).
+
+          ![herd menu bar mac](images/herd/herd-menu-bar-mac.png)
 
 ## Configuratie Herd
 
@@ -138,12 +139,12 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` moet 
     }
    ```
 - Sla het bestand op en sluit het.
-- Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac) en kies voor 
+- Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac) en kies voor
   **Stop all services** en vervolgens **Start all services**.
 
 ### Site tonen zonder geschikte driver
 
-Om alle zelfgemaakte site kunnen zien in het overzicht van **Sites** in Herd, moet je de volgende 
+Om alle zelfgemaakte site kunnen zien in het overzicht van **Sites** in Herd, moet je de volgende
 optie aanzetten.
 
 - In het dashboard van Herd ga je naar **Sites**
@@ -155,7 +156,7 @@ optie aanzetten.
 
 ### Directory listing aanzetten
 
-Om straks makkelijk naar bestanden te kunnen navigeren in de browser zetten we **directory listing** aan.  Vanwege 
+Om straks makkelijk naar bestanden te kunnen navigeren in de browser zetten we **directory listing** aan.  Vanwege
 veiligheidsoverwegingen staat **directory listing** standaard uit.
 
 - **Open Powershell** (**Terminal** op Mac).
@@ -184,47 +185,80 @@ veiligheidsoverwegingen staat **directory listing** standaard uit.
 
 ### Configuratie PHPStorm
 
-Als je in phpStorm werkt zitten er enorm veel toffe features, snelkoppelingen, etc waar we ook regelmatig bij stilstaan. 
+Als je in phpStorm werkt zitten er enorm veel toffe features, snelkoppelingen, etc waar we ook regelmatig bij stilstaan.
 Er zijn echter ook 3 settings die standaard niet ideaal ingesteld zijn, en we raden je aan deze aan te passen als volgt:
 
-- Zet de inline completion uit. Daarmee voorkom je auto suggestions die, net als Github Copilot, je op het huidige moment in je carrière eerder tegenwerken dan helpen. Het nu zelf leren en later in je carrière deze feature aanzetten is uiteraard een logische vervolgstap. Maar fouten krijgen na autocompletion zonder dat je nog goed weet wat het doet werkt jezelf alleen maar tegen.
+1. **Zet de inline completion uit.**
+
+   Daarmee voorkom je auto suggestions die, net als een AI agent, je op het huidige moment in je carrière eerder tegenwerken dan helpen. Het nu zelf leren en later in je carrière deze feature aanzetten is uiteraard een logische vervolgstap. Maar fouten krijgen na autocompletion zonder dat je nog goed weet wat het doet, werkt jezelf alleen maar tegen.
+- Ga naar *settings* (WINDOWS file > setting, MAC PhpStorm > settings) en zoek daar in de zoekbalk op *inline completions*. Zet deze uit.
   ![settings-full-completion.png](images/phpstorm/settings-full-completion.png)
-- Zet commit tool aan. Daarmee krijg je, als je gaat committen, een popup waar je beter overzicht hebt over wat je gaat committen.
-  ![settings-enable-commit-tool-window.png](images/phpstorm/settings-enable-commit-tool-window.png)
-- Zet ook het vinkje "clear initial message" aan zodat je altijd geforceerd wordt een nieuw bericht te typen voor je commit.
-  ![settings-clear-initial-commit.png](images/phpstorm/settings-clear-initial-commit.png)
-  
+
+2. **Zet commit tool aan.**
+
+   Daarmee krijg je, als je gaat committen, een popup waar je beter overzicht hebt over wat je gaat committen.
+   ![settings-enable-commit-tool-window.png](images/phpstorm/settings-enable-commit-tool-window.png)
+
+3. **Zet ook het vinkje "clear initial message" aan**
+
+   Hiermee wordt je altijd geforceerd om een nieuw bericht te typen voordat je commit.
+   ![settings-clear-initial-commit.png](images/phpstorm/settings-clear-initial-commit.png)
+
 - In de popup (**wanneer je gaat committen, dat is nu nog niet**) kun je ook gemakkelijk de vinkjes voor "analyze code" en "check todo" uitzetten waardoor je geen ellenlange warnings krijgt bij een commit.
-  
+
   ![settings-commit-options.png](images/phpstorm/settings-commit-options.png)
-- We zien nog regelmatig niet mooi geformatte code voorbij komen. Als je zoekende bent in code kan dit je tegenwerken. 
+- We zien nog regelmatig niet mooi geformatte code voorbij komen. Als je zoekende bent in code kan dit je tegenwerken.
   Door het vinkje "reformat code" aan te zetten bij "actions on save" wordt je code bij het opslaan automatisch geformat en weer netjes uitgelijnd. Lang leve leesbaarheid
-  
+
   ![settings-reformat-code.png](images/phpstorm/settings-reformat-code.png)
+
+### AI assistant
+
+Wanneer je vragen wilt stellen aan AI doe je dat in de **'Ask mode'**. Wanneer je de agent gebruikt zullen denkstappen voor je gedaan worden wat jouw ontwikkeling in de weg zit.
+
+Als je een vraag wilt stellen, dan kun je dit het beste in Copilot doen. Daar heb je een keuze uit modellen en zit je niet vast aan het freemium model dat de Jetbrains AI assistant standaard biedt.
+
+**Jetbrains AI Assistant uitzetten.**
+- Ga naar de settings van PhpStorm en zoek op **'assistant'**
+- Klik in de sidebar op **Plugins** en bovenin het scherm op **Marketplace**
+- In de zoekbalk zoek je op **'Jetbrains assistant'**
+- Klik op het pijltje naast Disable en kies voor **uninstall**.
+
+  ![jetbrains-assistant.png](images/phpstorm/jetbrains-assistant.png)
+- In de rechtbovenhoek klik je met rechtermuis op het assistant icoon en kies je **Hide**.
+
+  ![assistant-icon.png](images/phpstorm/assistant-icon.png)
+
+**Github Copilot aanzetten.**
+- Zoek nu in de zoekbalk op **'Github Copilot'**
+- Klik op Enable
+- Je zal hierna PhpStorm moeten herstarten.
+
+  ![github-copilot.png](images/phpstorm/github-copilot.png)
 
 ### Test de server met eigen PHP-bestand
 
 Om te testen of de server werkt voegen we een `serverinfo` map toe aan de Development map. Hierin komt een
 bestand `phpinfo.php` te staan. Dit bestand geeft informatie over de PHP-instellingen van de server.
 
-- Open de **Development** map in explorer/finder. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`) en voeg de 
-map `serverinfo` toe.
+- Open de **Development** map in explorer/finder. (Bijvoorbeeld `C:\Users\[USER ACCOUNT]\Development`) en voeg de
+  map `serverinfo` toe.
 - Open PhpStorm en open de map `serverinfo`.
 - Kies voor _Trust Project_ (en vink aan dat je voortaan alle projects in de Development map vertrouwt).
 - Aan de linkerkant zie je een icoontje van een map om de mappenstructuur te zien. Klik hierop als deze nog niet
-zichtbaar is.
+  zichtbaar is.
 - Rechtermuisklik op de hoofdmap _serverinfo_ en kies voor _New > PHP File_
 - Geef het bestand de naam `phpinfo.php`
-- Typ in dit bestand 
+- Typ in dit bestand
   ```php
   <?php 
   phpinfo();
   ```
-Dit bestand ga je nu in de browser bezoeken. 
+Dit bestand ga je nu in de browser bezoeken.
 - Klik met de rechtermuisknop op **Herd** in de system tray en kies voor _Open Sites_.
 - Waarschijnlijk moet je eerst op verversen klikken om de site te zien. Klik hiervoor op het icoontje met de twee pijltjes.
 - Je ziet nu de site `serverinfo.test` staan. Klik hierop.
-- De details van de site worden getoond. In de gegevens zie je URL staan, met de link naar de site. 
+- De details van de site worden getoond. In de gegevens zie je URL staan, met de link naar de site.
   [http://serverinfo.test](http://serverinfo.test). Klik hierop.
 - Je ziet nu de volgende pagina. Klik op de link naar het bestand `phpinfo.php`.
     <div style="background-color: white; font-family: 'Times New Roman',serif; color: black;">
@@ -237,16 +271,16 @@ Dit bestand ga je nu in de browser bezoeken.
 - Je ziet nu een pagina met informatie over de PHP-instellingen van de server.
 - 🎉 Gefeliciteerd! Je hebt nu een werkende webserver en IDE.
 
-⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het 
-verstandig om het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie 
+⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het
+verstandig om het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie
 over de server en kan een veiligheidsrisico vormen.
 
 ## DBngin
 
-- Dubbelklik de installer en volg de stappen. Laat de standaard opties staan. 
-- Na het starten van de applicatie vink je bovenin de twee opties aan: 
-  - _Start on login_
-  - _Show in taskbar_
+- Dubbelklik de installer en volg de stappen. Laat de standaard opties staan.
+- Na het starten van de applicatie vink je bovenin de twee opties aan:
+    - _Start on login_
+    - _Show in taskbar_
 
 ### Databaseserver toevoegen
 
@@ -255,33 +289,33 @@ Als eerste gaan we een nieuwe MySQL server toevoegen, om vervolgens een database
 
   ![select-new-mysql-server.png](images/dbngin/select-new-mysql-server.png)
 - In het volgende overzicht pas je de volgende dingen aan.
-  - Version: 8.4
-  - Name: MySQL
-  - vinkje voor _Automatically start service on Login_.
-  
+    - Version: 8.4
+    - Name: MySQL
+    - vinkje voor _Automatically start service on Login_.
+
   ![new-mysql-server.png](images/dbngin/new-mysql-server.png)
   <br>Let op! Zoals aangegeven in de afbeelding (oranje letters), zijn de default credentials om te verbinden met de server:
     - **Username**: root
     - **Password**: _leeg laten_
 
 - Klik op _Create_ en vervolgens op _OK_ om een admin toe te voegen.
-- Geef toestemming voor de toegang tot netwerken. 
-- De server is nu toegevoegd aan het beginscherm van DBngin. Klik op start om de server te starten. In de toekomst zal 
-na een herstart van de computer de server automatisch starten.
+- Geef toestemming voor de toegang tot netwerken.
+- De server is nu toegevoegd aan het beginscherm van DBngin. Klik op start om de server te starten. In de toekomst zal
+  na een herstart van de computer de server automatisch starten.
   ![start-server.png](images/dbngin/start-server.png)
 
 ### PHPMyAdmin toevoegen
 
-Om makkelijk bij een database te kunnen om bijvoorbeeld een nieuwe database aan te maken, de inhoud van een tabel te 
-kunnen zien of om data te bewerken (admin taak) kun je gebruik maken van een database management tool. Deze bestaan in 
+Om makkelijk bij een database te kunnen om bijvoorbeeld een nieuwe database aan te maken, de inhoud van een tabel te
+kunnen zien of om data te bewerken (admin taak) kun je gebruik maken van een database management tool. Deze bestaan in
 desktop variant, het zit ook ingebouwd in PHPStorm, maar een veelgebruikte variant is via een Webomgeving. PHPMyAdmin
-is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het volgende:  
+is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het volgende:
 
 - Download [PHPMyAdmin](https://www.phpmyadmin.net/downloads/). Je kunt de ZIP-file van de Engelse versie downloaden.
 - Open de `Development` map in de Finder/Explorer en sleep de ZIP-file naar deze map.
 - Pak de ZIP-file uit en hernoem de map naar `phpmyadmin`.
 - In de map `phpmyadmin` staat een bestand `config.sample.inc.php`. Hernoem dit bestand naar `config.inc.php`.
-- Open het bestand in een teksteditor en zoek naar de regel `$cfg[‘Servers’][$i][‘AllowNoPassword’]`. 
+- Open het bestand in een teksteditor en zoek naar de regel `$cfg[‘Servers’][$i][‘AllowNoPassword’]`.
   Verander de waarde van `false` naar `true`.
 - Verander ook de host naar `127.0.0.1`
   ```php
@@ -290,24 +324,24 @@ is een veel gebruikte toepassing. Om PHPMyAdmin te kunnen gebruiken doe je het v
   $cfg['Servers'][$i]['AllowNoPassword'] = true;
   ```
 - Sla het bestand op en sluit het.
-- Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan. 
+- Via de browser kun je nu PHPMyAdmin openen door naar `phpmyadmin.test` te gaan.
   Of via de Sites in Herd (wel even verversen).
 
 --------------------
-  
+
 # PHP Projecten
 
-In de **Development** map gaan we drie projecten maken. Het eerste project komt van GitHub en dat is het project met 
+In de **Development** map gaan we drie projecten maken. Het eerste project komt van GitHub en dat is het project met
 alle **lesopdrachten** en voorbeelden. Het tweede project is de **werkmap** waarin je alle lesopdrachten
-uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus 
+uitwerkt. Het laatste project is het project met de **eindopdracht**. Hierin komt de website te staan die je deze cursus
 gaat maken en die je aan het einde van de cursus inlevert als eindopdracht.
 
-Dit zijn losse projecten die je ook los opent in PHPStorm. Je hebt straks dus drie projecten openstaan in PHPStorm in 
+Dit zijn losse projecten die je ook los opent in PHPStorm. Je hebt straks dus drie projecten openstaan in PHPStorm in
 drie verschillende vensters.
 
 ## Lesopdrachten
 
-- Ga naar de [GitHubpagina](https://GitHub.com/HR-CMGT) van CMGT en dan specifiek de [repository 
+- Ga naar de [GitHubpagina](https://GitHub.com/HR-CMGT) van CMGT en dan specifiek de [repository
   van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2024-2025)
 - Hier zie je een groene knop met de tekst **Code**. Klik hierop en kopieer de `https` link die je ziet staan.
 - Ga nu naar PHPStorm en kies voor _Clone Repository_.
@@ -319,21 +353,21 @@ drie verschillende vensters.
   ![clone-repo.png](images/phpstorm/clone-repo.png)
 - Login met GitHub via de browser
 - Wil je de PHP-bestanden inzien dan open je de map `prg02-lesopdrachten` in PhpStorm.
-- Je kunt het resultaat ook bekijken in de browser. Open en ververs de Sites in Herd en klik op de 
+- Je kunt het resultaat ook bekijken in de browser. Open en ververs de Sites in Herd en klik op de
   site `prg02-lesopdrachten.test`. Je kunt natuurlijk ook direct naar `prg02-lesopdrachten.test` in de browser gaan.
 
 ## Werkmap
 
 - Maak een nieuwe map aan in de **Development** map en noem deze `prg02-werkmap`
-- Wanneer je aan de lesopdrachten gaat werken, kopieer je de map van de les naar deze map. 
+- Wanneer je aan de lesopdrachten gaat werken, kopieer je de map van de les naar deze map.
   Zo kun je de lesopdrachten uitwerken zonder dat je de originele lesopdrachten aanpast.
 - In PHPStorm ga je naar _File > Open_ en navigeer je naar de map `prg02-werkmap`.
-- Open het project in een **nieuw venster**. 
+- Open het project in een **nieuw venster**.
 
 ## Eindopdracht
 
 - Ga in PhpStorm naar _File > New Project_
-- Kies voor empty PHP Project. 
+- Kies voor empty PHP Project.
 - Geef de map de naam `prg02-eindopdracht`.
 - En plaats deze in de **Development** map.
 
@@ -343,7 +377,7 @@ drie verschillende vensters.
 **Toevoegen aan GitHub**
 
 Om ervoor te zorgen dat jouw project veilig is opgeslagen, voeg je deze toe aan GitHub. Doe dit voor het project
-met de eindopdracht. Je kunt dit ook doen voor de werkmap. 
+met de eindopdracht. Je kunt dit ook doen voor de werkmap.
 
 - Als het project open staat, klik je op _VCS > Share Project on GitHub_
 - Eventueel moet je hierna inloggen met je GitHub account.
@@ -363,7 +397,7 @@ Digital Ocean voor cloud hosting, een jaar lang gratis domeinnaam registratie op
 ### Domeinnaam
 
 Via the student pack kan je bij namecheap een domeinnaam (.me) registreren.
- - https://www.namecheap.com/support/knowledgebase/article.aspx/9687/35/how-to-register-a-domain-via-our-educational-promotion-at-ncme/?hcs_request_id=e0f2bffb47e4
+- https://www.namecheap.com/support/knowledgebase/article.aspx/9687/35/how-to-register-a-domain-via-our-educational-promotion-at-ncme/?hcs_request_id=e0f2bffb47e4
 
 ### Cloud Hosting
 
