@@ -342,7 +342,7 @@ drie verschillende vensters.
 ## Lesopdrachten
 
 - Ga naar de [GitHubpagina](https://GitHub.com/HR-CMGT) van CMGT en dan specifiek de [repository
-  van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2024-2025)
+  van Programmeren 2](https://GitHub.com/HR-CMGT/PRG02-2025-2026)
 - Hier zie je een groene knop met de tekst **Code**. Klik hierop en kopieer de `https` link die je ziet staan.
 - Ga nu naar PHPStorm en kies voor _Clone Repository_.
 
