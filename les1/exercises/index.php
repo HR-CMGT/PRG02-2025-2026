@@ -31,8 +31,19 @@ $decimal = 10;
     <div class="content">
         <img src="words-table/words-table.png" alt="words table" style="width: 40%"/>
         <blockquote>
-            Werk de <a href="words-table/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in
-            de lesopdrachten folder
+            <p>
+                Werk de <a href="words-table/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in
+                de lesopdrachten folder
+            </p>
+            <p>
+                Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table">Table</a> volgens de officiele documentatie
+            </p>
+        </blockquote>
+        <blockquote class="has-background-primary">
+            <h2>AI Hulpvragen</h2>
+            <ol>
+                <li>How is a table defined in HTML?</li>
+            </ol>
         </blockquote>
     </div>
 </section>
@@ -65,7 +76,7 @@ $decimal = 10;
         </p>
         <blockquote>
             Werk de <a href="greetings/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
-            lesopdrachten folder
+            lesopdrachten folder. Tip: gebruik de info van PHP.Net over de date() functie.
         </blockquote>
     </div>
 </section>
@@ -109,8 +120,22 @@ $decimal = 10;
             <strong>Index (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
-            lesopdrachten folder
+            <p>
+                Werk de <a href="../start/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
+                lesopdrachten folder
+            </p>
+            <ul>
+                <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php">Arrays</a> in PHP.</li>
+                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php">Foreach</a> in PHP.</li>
+            </ul>
+        </blockquote>
+        <blockquote class="has-background-primary">
+            <h2>AI Hulpvragen</h2>
+            <ol>
+                <li>How does a associative array work in PHP?</li>
+                <li>If I have the following attributes of a music album: Naam artiest, Naam album, Jaar van uitkomen, Aantal tracks, Genre. What should the structure be in the associative array? And could you give me an example with multiple albums.</li>
+                <li>Explain to me, in a simple way, how a foreach loop works in PHP.</li>
+            </ol>
         </blockquote>
     </div>
 </section>
