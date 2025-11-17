@@ -219,8 +219,7 @@ Wanneer je vragen wilt stellen aan AI doe je dat in de **'Ask mode'**. Wanneer j
 Als je een vraag wilt stellen, dan kun je dit het beste in Copilot doen. Daar heb je een keuze uit modellen en zit je niet vast aan het freemium model dat de Jetbrains AI assistant standaard biedt.
 
 **Jetbrains AI Assistant uitzetten.**
-- Ga naar de settings van PhpStorm en zoek op **'assistant'**
-- Klik in de sidebar op **Plugins** en bovenin het scherm op **Marketplace**
+- Ga naar de settings van PhpStorm, klik op **Plugins** en vervolgens op **Marketplace**
 - In de zoekbalk zoek je op **'Jetbrains assistant'**
 - Klik op het pijltje naast Disable en kies voor **uninstall**.
 
@@ -230,7 +229,8 @@ Als je een vraag wilt stellen, dan kun je dit het beste in Copilot doen. Daar he
   ![assistant-icon.png](images/phpstorm/assistant-icon.png)
 
 **Github Copilot aanzetten.**
-- Zoek nu in de zoekbalk op **'Github Copilot'**
+- Ga naar de settings van PhpStorm, klik op **Plugins** en vervolgens op **Marketplace**
+- In de zoekbalk zoek je op **'Github Copilot'**
 - Klik op Enable
 - Je zal hierna PhpStorm moeten herstarten.
 
