@@ -224,7 +224,14 @@ Als je een vraag wilt stellen, dan kun je dit het beste in Copilot doen. Daar he
 - Klik op Enable
 - Je zal hierna PhpStorm moeten herstarten.
 
-  ![github-copilot.png](images/phpstorm/github-copilot.png)
+   ![github-copilot.png](images/phpstorm/github-copilot.png)
+
+**Autocomplete uitzetten**
+
+- Onderin je balk van PHPStorm zie je nu een Copilot icoon. 
+- Klik hierop en kies dan voor de optie *Disable Completions* 
+
+  ![copilot-completions.png](images/phpstorm/copilot-completions.png)
 
 ### Test de server met eigen PHP-bestand
 
