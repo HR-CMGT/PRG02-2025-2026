@@ -157,6 +157,12 @@
             <a href="opdr5-get-pagina2.php" target="_blank">pagina2</a> kloppend, zodat pagina2 de naam van de
             aangeklikte Pill laat zien.
         </blockquote>
+        <blockquote class="has-background-primary">
+            <h2>AI Hulpvragen</h2>
+            <ol>
+                <li>Leg mij uit hoe het versturen van informatie via een link werkt in PHP en hoe deze informatie uitgelezen kan worden.</li>
+            </ol>
+        </blockquote>
     </div>
 </section>
 
