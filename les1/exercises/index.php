@@ -36,7 +36,7 @@ $decimal = 10;
                 de lesopdrachten folder
             </p>
             <p>
-                Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table">Table</a> volgens de officiele documentatie
+                Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table" target="_blank">Table</a> volgens de officiele documentatie
             </p>
         </blockquote>
         <blockquote class="has-background-primary">
@@ -125,8 +125,8 @@ $decimal = 10;
                 lesopdrachten folder
             </p>
             <ul>
-                <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php">Arrays</a> in PHP.</li>
-                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php">Foreach</a> in PHP.</li>
+                <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">Arrays</a> in PHP.</li>
+                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php target="_blank"">Foreach</a> in PHP.</li>
             </ul>
         </blockquote>
         <blockquote class="has-background-primary">
