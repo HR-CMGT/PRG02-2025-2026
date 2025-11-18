@@ -153,7 +153,7 @@ veiligheidsoverwegingen staat **directory listing** standaard uit.
   herd directory-listing on
   ```
 
-(MAC: het kan zijn dat je op de MAC deze opdracht 2x moet uitvoeren om het resultaat te zien in de browser.)
+(MAC: het kan zijn dat je op de MAC deze opdracht 2x moet uitvoeren om het resultaat te zien)
 
 ## Jetbrains Toolbox
 
