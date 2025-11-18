@@ -142,18 +142,6 @@ Om ervoor te zorgen dat de URL's in de browser altijd eindigen met een `/` moet 
 - Wederom rechtermuisklik op het Herd icoon in de system tray (Windows) of menu bar (Mac) en kies voor
   **Stop all services** en vervolgens **Start all services**.
 
-### Site tonen zonder geschikte driver
-
-Om alle zelfgemaakte site kunnen zien in het overzicht van **Sites** in Herd, moet je de volgende
-optie aanzetten.
-
-- In het dashboard van Herd ga je naar **Sites**
-- Klik op settings (het tandwiel icoon).
-  ![site settings](images/herd/site-settings.png)
-- Selecteer de optie **Show sites without valid driver**
-  ![enable sites without valid driver](images/herd/sites-without-valid-driver.png)
-
-
 ### Directory listing aanzetten
 
 Om straks makkelijk naar bestanden te kunnen navigeren in de browser zetten we **directory listing** aan.  Vanwege
@@ -164,6 +152,8 @@ veiligheidsoverwegingen staat **directory listing** standaard uit.
   ```bash
   herd directory-listing on
   ```
+
+(MAC: het kan zijn dat je op de MAC deze opdracht 2x moet uitvoeren om het resultaat te zien)
 
 ## Jetbrains Toolbox
 
@@ -234,7 +224,14 @@ Als je een vraag wilt stellen, dan kun je dit het beste in Copilot doen. Daar he
 - Klik op Enable
 - Je zal hierna PhpStorm moeten herstarten.
 
-  ![github-copilot.png](images/phpstorm/github-copilot.png)
+   ![github-copilot.png](images/phpstorm/github-copilot.png)
+
+**Autocomplete uitzetten**
+
+- Onderin je balk van PHPStorm zie je nu een Copilot icoon. 
+- Klik hierop en kies dan voor de optie *Disable Completions* 
+
+  ![copilot-completions.png](images/phpstorm/copilot-completions.png)
 
 ### Test de server met eigen PHP-bestand
 
@@ -274,6 +271,17 @@ Dit bestand ga je nu in de browser bezoeken.
 ⚠️ Wanneer je het bestand (`phpinfo.php`) gebruikt op een live-server om informatie over de server te krijgen, is het
 verstandig om het bestand, na het inzien van de informatie, direct te verwijderen. Het geeft namelijk veel informatie
 over de server en kan een veiligheidsrisico vormen.
+
+### Site tonen zonder geschikte driver
+
+Om alle zelfgemaakte site kunnen zien in het overzicht van **Sites** in Herd, moet je de volgende
+optie aanzetten.
+
+- In het dashboard van Herd ga je naar **Sites**
+- Klik op settings (het tandwiel icoon). Of drie puntjes op Windows.
+  ![site settings](images/herd/site-settings.png)
+- Selecteer de optie **Show sites without valid driver**
+  ![enable sites without valid driver](images/herd/sites-without-valid-driver.png)
 
 ## DBngin
 
@@ -373,6 +381,11 @@ drie verschillende vensters.
 
   ![new project.png](images/phpstorm/new-empty-project.png)
 - Klik op Create en je ziet nu een lege map met de naam eindopdracht.
+
+Maak nu een `.gitignore` bestand aan zodat je bepaalde onderdelen kunt uitsluiten. De onderdelen die in .gitignore staan worden nu naar de server gestuurd. 
+- Maak een normaal bestand aan. Klik hiervoor met de rechtermuis op de naam (prg02-eindopdracht) en kies voor *New* > *File*.
+- Dit bestand noem je `.gitignore`
+- In het bestand type je: `.idea` en dan sla je het op.
 
 **Toevoegen aan GitHub**
 
