@@ -10,7 +10,7 @@ require_once "includes/database.php";
 <head>
     <title>Music Collection Edit</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
 <div class="container px-4">

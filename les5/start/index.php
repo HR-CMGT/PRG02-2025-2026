@@ -15,7 +15,7 @@ require_once 'includes/database.php';
 <head>
     <meta charset="UTF-8">
     <title>Music Collection</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
 <div class="container px-4">
