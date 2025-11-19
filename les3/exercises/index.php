@@ -97,8 +97,8 @@
                 <code>start</code>map.
                 <br>
                 Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de pagina
-                store.php gestuurd. Deze pagina zal je nog moeten aanmaken. Op deze pagina wordt de informatie
-                uit het formulier uitgelezen en vervolgens toegevoegd aan de database.
+                <strong>dezelfde pagina</strong> gestuurd. Op de createpagina zal de informatie dus ook moeten worden uitgelezen en
+                vervolgens toegevoegd aan de database.
             </em>
         </p>
         <p>
