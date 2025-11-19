@@ -13,9 +13,9 @@ $db = mysqli_connect($host, $username, $password, $database)
     or die('Error: '.mysqli_connect_error());
 
 // Stap 3: Query naar de database opbouwen. Het is belangrijk dat dit
-//         apart gebeurt zodat je deze apart kunt tonen
-
+//         apart gebeurt zodat je deze apart kunt tonen en testen in PHPMyAdmin
 $query = "SELECT * FROM albums";
+
 // Stap 4: Query uitvoeren op de database. Als dit goed gaat, geeft
 //         mysqli_query een mysqli_result terug. Let op, dit is een tabel.
 // Stap 5: Foutafhandeling. Als de query niet uitgevoerd kan worden, treedt
@@ -25,20 +25,12 @@ $query = "SELECT * FROM albums";
 $result = mysqli_query($db, $query)
     or die('Error '.mysqli_error($db).' with query '.$query);
 
-// Stap 6: Resultaat verwerken. Er wordt een nieuwe array gemaakt waarin alle
-//         rijen uit de db komen. In dit geval is een rij een album.
-$albums = [];
-//         mysqli_fetch_assoc haalt een rij uit het result en zet deze om naar
-//         een associatieve array. De namen van de index corresponderen met de
-//         kolomnamen (velden) van de tabel
-//         Als er geen rijen meer zijn in het resultaat geeft mysqli_fetch_assoc
-//         'false' terug en stopt de while loop.
-
-while($row = mysqli_fetch_assoc($result))
-{
-    // elke rij (dit is een album) wordt aan de array 'albums' toegevoegd.
-    $albums[] = $row;
-}
+// Stap 6: Resultaat verwerken.
+//         Na een query geeft de database een TABEL terug. Deze worden rij-voor-rij
+//         doorlopen. Per rij wordt een array per album gemaakt en deze komen in de
+//         multidimensionale array $albums te staan.
+//         MYSQLI_ASSOC geeft aan dat het een associatieve array moet worden.
+$albums = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 // Stap 7: Sluit de verbinding met de db. Deze is niet meer nodig. Al het
 //         resultaat zit in de variabele $albums
