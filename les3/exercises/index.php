@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lesopdrachten les 3</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -107,13 +107,7 @@
 
         <blockquote>
             <p>Werk in tweetallen en noteer:</p>
-            <ol>
-                <li>Welke informatie / data heb je nodig als input voor deze opdracht?</li>
-                <li>Wat moet er stap voor stap gebeuren om het resultaat te bereiken? Let op! Je mag geen
-                    technische termen gebruiken het gaat om de functionaliteit.
-                </li>
-                <li>Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.</li>
-            </ol>
+            <p>Werk in tweetallen en noteer de pseudocode voor de createpagina. Gebruik hiervoor de flow chart die we zojuist in de les gemaakt hebben.</p>
         </blockquote>
     </div>
 </section>

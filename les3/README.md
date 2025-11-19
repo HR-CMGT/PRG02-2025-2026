@@ -43,11 +43,7 @@ toegevoegd aan de database._
 
 **Create (ontwerp tweetallen)**
 
-> Werk in tweetallen en noteer:
->
-> 1.  Welke informatie / data heb je nodig als input voor deze opdracht?
-> 2.  Wat moet er stap voor stap gebeuren om het resultaat te bereiken? Let op! Je mag geen technische termen gebruiken het gaat om de functionaliteit.
-> 3.  Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.
+> Werk in tweetallen en noteer de pseudocode voor de createpagina. Gebruik hiervoor de flow chart die we zojuist in de les gemaakt hebben.
 
 Opdracht 4: SQL - INSERT query
 ==============================
@@ -66,6 +62,8 @@ Open [PhpMyAdmin](http://phpmyadmin.test/) en klik op de database [music\_collec
 > *   genre: Progressive Rock
 > *   year: 1973
 > *   tracks: 9
+
+Eventueel kun je de video **technisch ontwerp, insert en delete** gebruiken als naslag (Brightspace).
 
 Klik nu op de tab 'Insert' / 'Invoegen'.
 
