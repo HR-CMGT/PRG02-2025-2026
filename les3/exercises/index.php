@@ -107,13 +107,7 @@
 
         <blockquote>
             <p>Werk in tweetallen en noteer:</p>
-            <ol>
-                <li>Welke informatie / data heb je nodig als input voor deze opdracht?</li>
-                <li>Wat moet er stap voor stap gebeuren om het resultaat te bereiken? Let op! Je mag geen
-                    technische termen gebruiken het gaat om de functionaliteit.
-                </li>
-                <li>Bedenk (of zoek op) welke technische onderdelen je nodig hebt per stap.</li>
-            </ol>
+            <p>Werk in tweetallen en noteer de pseudocode voor de createpagina. Gebruik hiervoor de flow chart die we zojuist in de les gemaakt hebben.</p>
         </blockquote>
     </div>
 </section>
