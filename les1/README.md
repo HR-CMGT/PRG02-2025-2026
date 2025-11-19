@@ -38,8 +38,6 @@ _De informatie komt uit een (associatieve) array, die je zelf hardcoded gevuld h
 * Naam artiest
 * Naam album
 * Jaar van uitkomen
-* Aantal tracks
-* Genre
 
 **Index (ontwerp in tweetallen)**
 

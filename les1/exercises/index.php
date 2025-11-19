@@ -96,8 +96,6 @@ $decimal = 10;
                     <li>Naam artiest</li>
                     <li>Naam album</li>
                     <li>Jaar van uitkomen</li>
-                    <li>Aantal tracks</li>
-                    <li>Genre</li>
                 </ul>
             </em>
         </p>
