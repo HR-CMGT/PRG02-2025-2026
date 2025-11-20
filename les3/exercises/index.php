@@ -67,7 +67,8 @@
                 </li>
             </ul>
             <p>
-                De functie <a href="https://www.php.net/manual/en/function.isset" target="_blank">isset()</a> kun je gebruiken
+                De functie <a href="https://www.php.net/manual/en/function.isset" target="_blank">isset()</a> kun je
+                gebruiken
                 om te controleren of het
                 formulier verzonden is op de volgende manier:
             </p>
@@ -97,7 +98,8 @@
                 <code>start</code>map.
                 <br>
                 Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de pagina
-                <strong>dezelfde pagina</strong> gestuurd. Op de createpagina zal de informatie dus ook moeten worden uitgelezen en
+                <strong>dezelfde pagina</strong> gestuurd. Op de createpagina zal de informatie dus ook moeten worden
+                uitgelezen en
                 vervolgens toegevoegd aan de database.
             </em>
         </p>
@@ -107,7 +109,8 @@
 
         <blockquote>
             <p>Werk in tweetallen en noteer:</p>
-            <p>Werk in tweetallen en noteer de pseudocode voor de createpagina. Gebruik hiervoor de flow chart die we zojuist in de les gemaakt hebben.</p>
+            <p>Werk in tweetallen en noteer de pseudocode voor de createpagina. Gebruik hiervoor de flow chart die we
+                zojuist in de les gemaakt hebben.</p>
         </blockquote>
     </div>
 </section>
@@ -119,7 +122,8 @@
     </h2>
     <div class="content">
         <blockquote>
-            Bekijk nu de <strong>video</strong> over <a href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140" target="_blank">
+            Bekijk nu de <strong>video</strong> over <a
+                    href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140" target="_blank">
                 technisch ontwerp, insert en delete
             </a> op Brightspace
         </blockquote>
@@ -164,11 +168,12 @@
             <strong>Create (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
+            Development
             folder.
             De startcode staat in de map <code>start</code>.
-              <br>
-              <strong>Let op:</strong> gebruik de <code>index.php</code> die je hebt gemaakt in de vorige les.
+            <br>
+            <strong>Let op:</strong> gebruik de <code>index.php</code> die je hebt gemaakt in de vorige les.
         </blockquote>
     </div>
 </section>
@@ -181,11 +186,15 @@
             <strong>Albumfoto toevoegen</strong>
         </p>
         <blockquote>
-            Voeg een foto van het album toe tijdens de CREATE van een album. Hiervoor kan je hulp vragen aan AI met het onderstaande prompt. Zet de assistent in de 'Ask' modus.
+            Voeg een foto van het album toe tijdens de CREATE van een album. Hiervoor kan je hulp vragen aan AI met het
+            onderstaande prompt. Zet de assistent in de 'Ask' modus.
         </blockquote>
         <blockquote class="has-background-primary-light">
-            <h4>Prompt</h4>
-            <em>I want to be able to upload an image when creating a music album. On the create page i want to add the option to add a file (image). Can you tell me in text how to handle the steps to upload an image fot the album?</em>
+            <h4>AI hulpvraag</h4>
+            <em>Ik wil een afbeelding kunnen uploaden wanneer ik een muziekalbum aanmaak. Op de create-pagina wil ik de
+                mogelijkheid toevoegen om een bestand (afbeelding) te uploaden. Kun je me in tekst uitleggen welke
+                stappen ik moet volgen om een afbeelding voor het album te uploaden?
+            </em>
         </blockquote>
     </div>
 </section>
