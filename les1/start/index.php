@@ -28,22 +28,19 @@ $musicAlbums =
         <section class="section">
             <table class="table mx-auto">
                 <thead>
-                <tr>
-                    <th>Position</th>
-                    <th>Artist</th>
-                    <th>Album</th>
-                    <th>Genre</th>
-                    <th>Year</th>
-                    <th>Tracks</th>
-                </tr>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Year</th>
+                    </tr>
                 </thead>
                 <tfoot>
-                <tr>
-                    <td colspan="6">&copy; My Collection</td>
-                </tr>
+                    <tr>
+                        <td colspan="3">&copy; My Collection</td>
+                    </tr>
                 </tfoot>
                 <tbody>
-                <!--        Loop through all albums in the collection-->
+                    <!-- Loop through all albums in the collection-->
 
                 </tbody>
             </table>

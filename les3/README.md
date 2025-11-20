@@ -37,9 +37,7 @@ Opdracht 3 Createpagina
 _Voeg een "Create" link toe, boven de tabel op de indexpagina. Na het aanklikken van de link wordt de bijbehorende 
 `create.php` geladen met een formulier waarvan de velden overeenkomen met de gegevens van een album. Voor create kun je 
 gebruik maken van de voorbeeldpagina uit de `start`map.  
-Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de pagina store.php gestuurd. 
-Deze pagina zal je nog moeten aanmaken. Op deze pagina wordt de informatie uit het formulier uitgelezen en vervolgens 
-toegevoegd aan de database._
+Wanneer een bezoeker het formulier heeft ingevuld en op Save klikt, wordt de informatie naar de **pagina dezelfde** pagina gestuurd. Op de createpagina zal de informatie dus ook moeten worden uitgelezen en vervolgens toegevoegd aan de database._
 
 **Create (ontwerp tweetallen)**
 

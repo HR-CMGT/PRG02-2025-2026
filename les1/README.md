@@ -43,8 +43,6 @@ de volgende informatie:_
 * Naam artiest
 * Naam album
 * Jaar van uitkomen
-* Aantal tracks
-* Genre
 
 **Index (ontwerp in tweetallen)**
 
