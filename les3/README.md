@@ -77,7 +77,7 @@ Eventueel kun je de video **technisch ontwerp, insert en delete** gebruiken als 
 
 Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
 <br>
-Klik nu op de tab 'Insert' / 'Invoegen'.
+Klik vervolgens op de tab 'Insert' / 'Invoegen'.
 
 > Voeg hier een album naar keuze toe d.m.v. het formulier (voer de **id** niet in).  
 > Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt. Hieronder staat een

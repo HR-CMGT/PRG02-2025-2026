@@ -150,7 +150,7 @@
 
         Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
         <br>
-        Klik nu op de tab 'Insert' / 'Invoegen'.
+        Klik vervolgens op de tab 'Insert' / 'Invoegen'.
         <blockquote>
             Voeg hier een album naar keuze toe d.m.v. het formulier (voer de <strong>id</strong> niet in).
             <br>
