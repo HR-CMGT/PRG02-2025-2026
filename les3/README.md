@@ -75,6 +75,8 @@ op de tab 'SQL'.
 
 Eventueel kun je de video **technisch ontwerp, insert en delete** gebruiken als naslag (Brightspace).
 
+Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
+<br>
 Klik nu op de tab 'Insert' / 'Invoegen'.
 
 > Voeg hier een album naar keuze toe d.m.v. het formulier (voer de **id** niet in).  
