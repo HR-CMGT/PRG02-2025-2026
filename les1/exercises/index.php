@@ -32,17 +32,19 @@ $decimal = 10;
         <img src="words-table/words-table.png" alt="words table" style="width: 40%"/>
         <blockquote>
             <p>
-                Werk de <a href="words-table/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in
+                Werk de <a href="words-table/index.php" target="_blank"><strong>opdracht</strong></a> uit in je
+                persoonlijke map in
                 de lesopdrachten folder
             </p>
             <p>
-                Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table" target="_blank">Table</a> volgens de officiele documentatie
+                Bron: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table"
+                         target="_blank">Table</a> volgens de officiele documentatie
             </p>
         </blockquote>
         <blockquote class="has-background-primary">
             <h2>AI Hulpvragen</h2>
             <ol>
-                <li>How is a table defined in HTML?</li>
+                <li>Hoe bouw je een table op in HTML?</li>
             </ol>
         </blockquote>
     </div>
@@ -75,7 +77,8 @@ $decimal = 10;
             <strong>Greetings (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="greetings/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
+            Werk de <a href="greetings/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke
+            map in de
             lesopdrachten folder. Tip: gebruik de info van PHP.Net over de date() functie.
         </blockquote>
     </div>
@@ -121,20 +124,29 @@ $decimal = 10;
         </p>
         <blockquote>
             <p>
-                Werk de <a href="../start/index.php" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
+                Werk de <a href="../start/index.php" target="_blank"><strong>opdracht</strong></a> uit in je
+                persoonlijke map in de
                 lesopdrachten folder
             </p>
             <ul>
-                <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">Arrays</a> in PHP.</li>
-                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php target="_blank"">Foreach</a> in PHP.</li>
+                <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">Arrays</a> in
+                    PHP.
+                </li>
+                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php target=" _blank"">Foreach</a>
+                    in PHP.
+                </li>
             </ul>
         </blockquote>
         <blockquote class="has-background-primary">
             <h2>AI Hulpvragen</h2>
             <ol>
-                <li>How does a associative array work in PHP?</li>
-                <li>If I have the following attributes of a music album: Naam artiest, Naam album, Jaar van uitkomen, Aantal tracks, Genre. What should the structure be in the associative array? And could you give me an example with multiple albums.</li>
-                <li>Explain to me, in a simple way, how a foreach loop works in PHP.</li>
+                <li>Hoe werkt een associative array in PHP?</li>
+                <li>Als ik de volgende eigenschappen van een muziekalbum heb: naam artiest, naam album, jaar van
+                    uitgave, aantal tracks, genre. Hoe moet de structuur er dan uitzien in een associative array? En kun
+                    je
+                    een voorbeeld geven met meerdere albums?
+                </li>
+                <li>Leg me op een eenvoudige manier uit hoe een foreach-loop in PHP werkt.</li>
             </ol>
         </blockquote>
     </div>
@@ -159,7 +171,8 @@ $decimal = 10;
         </p>
         <blockquote>
             <p>
-                Werk de <a href="date-time/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder <code>exercises/date-time</code>
+                Werk de <a href="date-time/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder
+                <code>exercises/date-time</code>
             </p>
             <p>
                 Schrijf de **huidige** datum/tijd op het scherm in verschillende notaties:
@@ -174,7 +187,8 @@ $decimal = 10;
             <strong>Zodiac Sign</strong>
         </p>
         <blockquote>
-            <p>Werk de <a href="zodiac-sign/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder <code>exercises/zodiac-sign</code>
+            <p>Werk de <a href="zodiac-sign/index.php" target="_blank"><strong>opdracht</strong></a> uit in de folder
+                <code>exercises/zodiac-sign</code>
             </p>
 
             <p>Maak een webpagina die laat zien welk sterrenbeeld je hebt op basis van je verjaardag. Je
