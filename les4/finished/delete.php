@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     // Get the record from the database result
     $albumId = mysqli_escape_string($db, $_POST['id']);
     $query = "SELECT * FROM albums WHERE id = '$albumId'";
-    $result = mysqli_query($db, $query) or die ('Error: ' . $query);
+    $result = mysqli_query($db, $query);
 
     $album = mysqli_fetch_assoc($result);
 
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     // DELETE DATA
     // Remove the album data from the database with the existing albumId
     $query = "DELETE FROM albums WHERE id = '$albumId'";
-    mysqli_query($db, $query) or die ('Error: ' . mysqli_error($db));
+    mysqli_query($db, $query);
 
     //Close connection
     mysqli_close($db);
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 
     //Get the record from the database result
     $query = "SELECT * FROM albums WHERE id = '$albumId'";
-    $result = mysqli_query($db, $query) or die ('Error: ' . $query);
+    $result = mysqli_query($db, $query);
 
     if (mysqli_num_rows($result) == 1) {
         $album = mysqli_fetch_assoc($result);

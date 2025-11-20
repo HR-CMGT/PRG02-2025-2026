@@ -2,7 +2,7 @@
 /** @var mysqli $db */
 
 // redirect when uri does not contain a id
-if(!isset($_GET['id']) || $_GET['id'] == '') {
+if (!isset($_GET['id']) || $_GET['id'] == '') {
     // redirect to index.php
     header('Location: index.php');
     exit;
@@ -16,11 +16,9 @@ $albumId = mysqli_escape_string($db, $_GET['id']);
 
 //Get the record from the database result
 $query = "SELECT * FROM albums WHERE id = '$albumId'";
-$result = mysqli_query($db, $query)
-    or die ('Error: ' . $query );
+$result = mysqli_query($db, $query);
 
-if(mysqli_num_rows($result) != 1)
-{
+if (mysqli_num_rows($result) != 1) {
     // redirect when db returns no result
     header('Location: index.php');
     exit;

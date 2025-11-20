@@ -5,7 +5,7 @@ require_once "includes/database.php";
 
 //Count the total records in the music database
 $query = "SELECT COUNT(*) FROM albums";
-$result = mysqli_query($db, $query) or die ('Error: ' . $query);
+$result = mysqli_query($db, $query);
 $total = mysqli_fetch_column($result);
 
 //Define offset from URL
@@ -17,7 +17,7 @@ if (isset($_GET['offset'])) {
 
 //Get the result set from the database with a SQL query
 $query = "SELECT * FROM albums LIMIT $limit OFFSET $offset";
-$result = mysqli_query($db, $query) or die ('Error: ' . $query);
+$result = mysqli_query($db, $query);
 
 //Loop through the result to create a custom array
 $musicAlbums = [];

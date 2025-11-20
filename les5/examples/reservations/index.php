@@ -8,12 +8,10 @@ $query = "SELECT *
           FROM planning_system.reservations 
           WHERE date >= '$date' AND date <= '$enddate'
           ORDER BY start_time ASC";
-$result = mysqli_query($db, $query)
-    or die('Error '.mysqli_error($db).' with query '.$query);
+$result = mysqli_query($db, $query);
 
 $reservations = [];
-while($row = mysqli_fetch_assoc($result))
-{
+while ($row = mysqli_fetch_assoc($result)) {
     $reservations[] = $row;
 }
 
@@ -32,17 +30,17 @@ setlocale(LC_ALL, 'nl_NL');
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <div class="row">
+<div class="row">
 
-        <?php for($i = 0 ; $i < 6 ; $i++) {?>
+    <?php for ($i = 0; $i < 6; $i++) { ?>
 
         <div class="column">
-            <b><?= strftime('%A', strtotime($date ." + $i days")) ?></b>
-            <div><?= date('j F', strtotime($date ." + $i days")) ?></div>
+            <b><?= strftime('%A', strtotime($date . " + $i days")) ?></b>
+            <div><?= date('j F', strtotime($date . " + $i days")) ?></div>
 
-            <?php foreach($reservations as $reservation) { ?>
+            <?php foreach ($reservations as $reservation) { ?>
 
-                <?php if(date('N', strtotime($reservation['date'])) == $i + 1) {?>
+                <?php if (date('N', strtotime($reservation['date'])) == $i + 1) { ?>
                     <?php include 'templates/template_event.php' ?>
                 <?php } ?>
 
@@ -50,8 +48,8 @@ setlocale(LC_ALL, 'nl_NL');
 
         </div>
 
-        <?php } ?>
-    </div>
-    <div class="row"><a href="create.php">Boek een nieuw event</a></div>
+    <?php } ?>
+</div>
+<div class="row"><a href="create.php">Boek een nieuw event</a></div>
 </body>
 </html>

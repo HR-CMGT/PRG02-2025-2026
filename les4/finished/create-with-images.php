@@ -8,10 +8,10 @@ if (isset($_POST['submit'])) {
     require_once "includes/image-helpers.php";
 
     //Postback with the data showed to the user, first retrieve data from 'Super global'
-    $name   = mysqli_escape_string($db, $_POST['name']);
+    $name = mysqli_escape_string($db, $_POST['name']);
     $artist = mysqli_escape_string($db, $_POST['artist']);
-    $genre  = mysqli_escape_string($db, $_POST['genre']);
-    $year   = mysqli_escape_string($db, $_POST['year']);
+    $genre = mysqli_escape_string($db, $_POST['genre']);
+    $year = mysqli_escape_string($db, $_POST['year']);
     $tracks = mysqli_escape_string($db, $_POST['tracks']);
 
     //Require the form validation handling
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         //Save the record to the database
         $query = "INSERT INTO albums (name, artist, genre, year, tracks, image)
                   VALUES ('$name', '$artist', '$genre', $year, $tracks, '$image')";
-        $result = mysqli_query($db, $query) or die('Error: '.mysqli_error($db). ' with query ' . $query);
+        $result = mysqli_query($db, $query);
 
         if ($result) {
             header('Location: index.php');

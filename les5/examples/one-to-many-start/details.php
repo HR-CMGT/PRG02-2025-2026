@@ -16,7 +16,7 @@ $id = mysqli_escape_string($db, $_GET['id']);
 
 //Get the record from the database result
 $query = "SELECT * FROM products WHERE id = '$id'";
-$result = mysqli_query($db, $query) or die ('Error: ' . $query);
+$result = mysqli_query($db, $query);
 
 if (mysqli_num_rows($result) != 1) {
     // redirect when db returns no result

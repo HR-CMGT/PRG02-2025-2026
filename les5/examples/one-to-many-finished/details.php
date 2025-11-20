@@ -19,7 +19,7 @@ $query = "SELECT p.*, c.name AS category_name
             FROM products AS p
             LEFT JOIN categories AS c ON c.id = p.category_id
             WHERE p.id = '$id'";
-$result = mysqli_query($db, $query) or die ('Error: ' . $query);
+$result = mysqli_query($db, $query);
 
 if (mysqli_num_rows($result) != 1) {
     // redirect when db returns no result

@@ -5,7 +5,7 @@ require_once "includes/database.php";
 
 //Get the categories from the database with a SQL query
 $query = "SELECT * FROM categories";
-$result = mysqli_query($db, $query) or die ('Error: ' . $query );
+$result = mysqli_query($db, $query);
 
 //Loop through the result to create a custom array
 $categories = [];
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
         //Save the record to the database
         $query = "INSERT INTO products (category_id, name, description, price)
                   VALUES ('$category_id', '$name', '$description', '$price')";
-        $result = mysqli_query($db, $query) or die('Error: ' . mysqli_error($db) . ' with query ' . $query);
+        $result = mysqli_query($db, $query);
 
         //Close connection
         mysqli_close($db);
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                     <div class="field">
                         <div class="control select">
                             <select id="category-id" name="category-id">
-                                <?php foreach($categories as $category) { ?>
+                                <?php foreach ($categories as $category) { ?>
                                     <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
                                 <?php } ?>
                             </select>
@@ -103,7 +103,8 @@ if (isset($_POST['submit'])) {
                 <div class="field-body">
                     <div class="field">
                         <div class="control">
-                            <textarea class="textarea" id="description" name="description"><?= $description ?? '' ?></textarea>
+                            <textarea class="textarea" id="description"
+                                      name="description"><?= $description ?? '' ?></textarea>
                         </div>
                         <p class="help is-danger">
                             <?= $errors['description'] ?? '' ?>

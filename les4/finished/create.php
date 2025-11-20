@@ -4,10 +4,10 @@
 //Check if Post isset, else do nothing
 if (isset($_POST['submit'])) {
     //Postback with the data showed to the user, first retrieve data from 'Super global'
-    $name   = $_POST['name'];
+    $name = $_POST['name'];
     $artist = $_POST['artist'];
-    $genre  = $_POST['genre'];
-    $year   = $_POST['year'];
+    $genre = $_POST['genre'];
+    $year = $_POST['year'];
     $tracks = $_POST['tracks'];
 
     //Require the form validation handling
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         //Save the record to the database
         $query = "INSERT INTO albums (name, artist, genre, year, tracks)
                   VALUES ('$name', '$artist', '$genre', $year, $tracks)";
-        $result = mysqli_query($db, $query) or die('Error: '.mysqli_error($db). ' with query ' . $query);
+        $result = mysqli_query($db, $query);
 
         //Close connection
         mysqli_close($db);
