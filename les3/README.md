@@ -56,10 +56,6 @@ Opdracht 4: SQL - INSERT query
 
 ### Het toevoegen van een nieuw album aan de database (in PHPMyAdmin)
 
-> Bekijk nu de **video**
-> over [technisch ontwerp, insert en delete](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140) op
-> Brightspace
-
 Open [PhpMyAdmin](http://phpmyadmin.test/) en klik op de
 database [music\_collection](http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection) en vervolgens op
 de tabel [albums](http://phpmyadmin.test/index.php?route=/table/sql&db=music_collection&table=albums). Klik vervolgens
@@ -73,8 +69,6 @@ op de tab 'SQL'.
 > * year: 1973
 > * tracks: 9
 
-Eventueel kun je de video **technisch ontwerp, insert en delete** gebruiken als naslag (Brightspace).
-
 Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
 <br>
 Klik vervolgens op de tab 'Insert' / 'Invoegen'.
@@ -82,6 +76,8 @@ Klik vervolgens op de tab 'Insert' / 'Invoegen'.
 > Voeg hier een album naar keuze toe d.m.v. het formulier (voer de **id** niet in).  
 > Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt. Hieronder staat een
 > query. Vergelijk deze query met jouw query.
+
+Eventueel kun je de video **technisch ontwerp, insert en delete** gebruiken als naslag (Brightspace).
 
 Opdracht 5: Createpagina uitwerken
 ==================================

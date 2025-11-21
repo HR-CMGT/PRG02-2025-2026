@@ -121,13 +121,6 @@
         Het toevoegen van een nieuw album aan de database (in PHPMyAdmin)
     </h2>
     <div class="content">
-        <blockquote>
-            Bekijk nu de <strong>video</strong> over <a
-                    href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/543140" target="_blank">
-                technisch ontwerp, insert en delete
-            </a> op Brightspace
-        </blockquote>
-
         <p>
             Open <a href="http://phpmyadmin.test/" target="_blank">PhpMyAdmin</a> en klik op de database <a
                     href="http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection"
@@ -147,10 +140,11 @@
                 <li>tracks: <span class="is-italic">9</span></li>
             </ul>
         </blockquote>
-
-        Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
-        <br>
-        Klik vervolgens op de tab 'Insert' / 'Invoegen'.
+        <p>
+            Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
+            <br>
+            Klik vervolgens op de tab 'Insert' / 'Invoegen'.
+        </p>
         <blockquote>
             Voeg hier een album naar keuze toe d.m.v. het formulier (voer de <strong>id</strong> niet in).
             <br>
@@ -158,6 +152,9 @@
             Hieronder staat een query. Vergelijk
             deze query met jouw query.
         </blockquote>
+        <p>
+            Eventueel kun je de video <strong>technisch ontwerp, insert en delete</strong> gebruiken als naslag (Brightspace).
+        </p>
     </div>
 </section>
 <section class="section has-background-primary-light">
