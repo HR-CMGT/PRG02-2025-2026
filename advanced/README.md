@@ -13,7 +13,7 @@ in [PHP](https://www.php.net/). Onderwerpen die aan bod zullen komen zijn:
 | 3    | [Les5](./lesson5) | Aanvullende technieken voor complexere vraagstukken | Abstract vs. Interfaces, Traits                     | Zelfde pagina's volledig in OOP                                  |                                 |
 |      | [Les6](./lesson6) | Debugging van code                                  | xDebug in phpStorm, error logging, magic methods    | -                                                                | Zelfevaluatie beoordelingsmodel |
 | 4    | [Les7](./lesson7) | App/public, unit test, code kwaliteit * JOINS       | phpStan, phpUnit, JOIN queries                      | Toekomstbestendige structuur als framework                       |                                 |
-|      | Les 8             | Afronding & ondersteuning                           | -                                                   | Eindopdracht af                                                  |                                 |
+|      | Les8              | Afronding & ondersteuning                           | -                                                   | Eindopdracht afronden                                            |                                 |
 | 5    |                   |                                                     |                                                     |                                                                  | Mondeling assessment            |
 
 ## Werkomgeving
