@@ -76,9 +76,6 @@
         <h2>Tips bij de uitwerking</h2>
         <ul>
             <li>Werk de code stap voor stap uit en ga pas verder als je vorige stap werkt (en dus door jou getest is).</li>
-            <li>Loop je tegen een error aan, kijk dan of het <a
-                        href="https://brightspace.hr.nl/d2l/le/lessons/138307/topics/542727" target="_blank">Debugstroomdiagram</a> je
-                kunt helpen.</li>
             <li>Voor het doorsturen naar de indexpagina kan je gebruik maken van de PHP-functie <a
                         href="https://www.php.net/manual/en/function.header.php"
                         target="_blank">header()</a></li>

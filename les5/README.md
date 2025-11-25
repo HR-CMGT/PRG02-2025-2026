@@ -42,8 +42,6 @@ Updatepagina
 
 Je hebt nu alle ingrediënten om de updatepagina te kunnen maken.
 
-Loop je tegen een error aan, kijk dan of het [Debugstroomdiagram](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/542727) je kunt helpen.
-
 > Werk de updatepagina uit, zodat je een album kunt bijwerken in de database.
 >
 > *   Het formulier van de updatepagina wordt gevuld met albuminformatie van het specifieke album dat aangeklikt is op de indexpagina

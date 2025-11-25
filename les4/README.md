@@ -33,8 +33,6 @@ Je hebt nu alle ingrediënten om de createpagina te kunnen maken met server-side
 ### Tips bij de uitwerking
 
 *   Werk de code stap voor stap uit en ga pas verder als je vorige stap werkt (en dus door jou getest is).
-*   Loop je tegen een error aan, kijk dan of het [Debugstroomdiagram](https://brightspace.hr.nl/d2l/le/lessons/138307/topics/542727) 
-    je kunt helpen.
 *   Voor het doorsturen naar de indexpagina kan je gebruik maken van de PHP-functie 
     [header()](https://www.php.net/manual/en/function.header.php)
 
