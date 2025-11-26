@@ -32,7 +32,8 @@
             database
             nodig. Er is al een database aangemaakt en deze is geëxporteerd in de vorm van een <code>.sql</code>
             bestand met de
-            naam: <a href="../../les2/exercises/music_collection.sql" download>music_collection.sql</a> (in de map les2/exercises)
+            naam: <a href="../../les2/exercises/music_collection.sql" download>music_collection.sql</a> (in de map
+            les2/exercises)
         </p>
         <blockquote>
             <ul>
@@ -57,7 +58,8 @@
         </p>
         <p>
             Wanneer je informatie wilt ophalen uit de database zul je dit moeten doen d.m.v. een vraag.
-            De database die wij gebruiken, werkt met de taal SQL. Via SQL ga je specifieke vragen stellen aan de database.
+            De database die wij gebruiken, werkt met de taal SQL. Via SQL ga je specifieke vragen stellen aan de
+            database.
             De vraag die je stelt noemen we een query en dan specifiek een
             <a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">SELECT Statement</a>.
         </p>
@@ -83,7 +85,7 @@
                     <a href="https://www.w3schools.com/sql/sql_like.asp" target="_blank">
                         <code class="is-underlined">LIKE</code></a> keyword
                 </li>
-                <li>Toon de eerste 5 albums op alfabetische volgorde van de artiest. Gebruik hierbij de
+                <li>Toon de eerste 5 albums op alfabetische volgorde van artiest. Gebruik hierbij de
                     <a href="https://www.w3schools.com/sql/sql_orderby.asp" target="_blank">
                         <code class="is-underlined">ORDER BY</code></a> en <a
                             href="https://www.w3schools.com/mysql/mysql_limit.asp" target="_blank"><code
@@ -102,30 +104,30 @@
         <blockquote>
             Gebruik de indexpagina uit de vorige les, maar koppel deze nu aan de
             <a href="https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/pt/querying-the-table"
-            target="_blank">database</a>. Dit vervangt de multidimensionale array. Gebruik hiervoor de database uit
+               target="_blank">database</a>. Dit vervangt de multidimensionale array. Gebruik hiervoor de database uit
             opdracht hierboven. Haal de albumdata op uit de database en toon deze in (de bestaande) tabel.
         </blockquote>
         <p class="is-italic">
-            <p>Tip 1</p>
-            <p>
-                <em>
-                    In het bestand <code>les2/examples/database/database-query-flow.php</code> staat de volledige code
-                    beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.
-                </em>
-            </p>
-            <p>Tip 2</p>
-            <p>
-                <em>
-                    In de map <code>les2/start/includes</code> staat het bestand <code>connection.php</code>. Dit is
-                    ook het
-                    bovenste deel van de code uit <code>database-query-flow.php</code>, dus let op dat je het niet
-                    dubbel doet.
-                    Deze kan je importeren met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt
-                    met de database.
-                    Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de
-                    database.
-                </em>
-            </p>
+        <p>Tip 1</p>
+        <p>
+            <em>
+                In het bestand <code>les2/examples/database/database-query-flow.php</code> staat de volledige code
+                beschreven (voorzien van comments) hoe je de data van álle albums uit de database haalt.
+            </em>
+        </p>
+        <p>Tip 2</p>
+        <p>
+            <em>
+                In de map <code>les2/start/includes</code> staat het bestand <code>connection.php</code>. Dit is
+                ook het
+                bovenste deel van de code uit <code>database-query-flow.php</code>, dus let op dat je het niet
+                dubbel doet.
+                Deze kan je importeren met de PHP-functie <code>require_once</code>. Hierna is er verbinding gemaakt
+                met de database.
+                Dit kun je ook gebruiken bij de volgende opdracht (details.php) om verbinding te maken met de
+                database.
+            </em>
+        </p>
         </p>
     </div>
 </section>
@@ -142,9 +144,11 @@
         </p>
 
         <blockquote>
-            <p>In <a href="opdr4-get-pagina1.html" target="_blank">pagina 1</a> staat een link die informatie moet doorgeven
+            <p>In <a href="opdr4-get-pagina1.html" target="_blank">pagina 1</a> staat een link die informatie moet
+                doorgeven
                 naar
-                <a href="opdr4-get-pagina2.php" target="_blank">pagina 2</a>. Maak pagina1 kloppend zodat op pagina2 de tekst
+                <a href="opdr4-get-pagina2.php" target="_blank">pagina 2</a>. Maak pagina1 kloppend zodat op pagina2 de
+                tekst
                 "Geweldig, het is
                 gelukt om de tag 'techniek' door te sturen." komt te staan.</p>
         </blockquote>
@@ -160,7 +164,9 @@
         <blockquote class="has-background-primary-light">
             <h2>AI Hulpvragen</h2>
             <ol>
-                <li>Leg mij uit hoe het versturen van informatie via een link werkt in PHP en hoe deze informatie uitgelezen kan worden.</li>
+                <li>Leg mij uit hoe het versturen van informatie via een link werkt in PHP en hoe deze informatie
+                    uitgelezen kan worden.
+                </li>
             </ol>
         </blockquote>
     </div>
@@ -202,7 +208,8 @@
             <strong>Details (uitwerking individueel)</strong>
         </p>
         <blockquote>
-            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de Development
+            Werk de <a href="../start" target="_blank"><strong>opdracht</strong></a> uit in je persoonlijke map in de
+            Development
             folder.
             De startcode staat in de map <code>start</code>.
         </blockquote>
@@ -221,7 +228,8 @@
         </p>
         <blockquote>
             Voeg aan de indexpagina en/of aan de detailpagina een afbeelding toe van het album. Hou er rekening mee
-            dat afbeeldingen niet als BLOB in de database komen, maar dat je de link naar de afbeelding als tekst opslaat.
+            dat afbeeldingen niet als BLOB in de database komen, maar dat je de link naar de afbeelding als tekst
+            opslaat.
         </blockquote>
         <p>
             <strong>Pagination</strong>

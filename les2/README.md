@@ -41,7 +41,7 @@ geeft.
 > * Toon alle albums die meer dan 10 tracks bevatten en NA 2014 zijn uitgebracht. (Aantal: 9)
 > * Toon alle albums waarvan de artiest begint met een ‘H’. (Aantal: 3). Gebruik hierbij het [
     `LIKE`](https://www.w3schools.com/sql/sql_like.asp) keyword
-> * Toon de eerste 5 albums op alfabetische volgorde van de artiest. Gebruik hierbij de [
+> * Toon de eerste 5 albums op alfabetische volgorde van artiest. Gebruik hierbij de [
     `ORDER BY`](https://www.w3schools.com/sql/sql_orderby.asp) en [
     `LIMIT`](https://www.w3schools.com/mysql/mysql_limit.asp)
 

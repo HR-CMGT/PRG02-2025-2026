@@ -130,7 +130,7 @@ $decimal = 10;
                 <li>Bron: <a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">Arrays</a> in
                     PHP.
                 </li>
-                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php target=" _blank"">Foreach</a>
+                <li>Bron: <a href="https://www.php.net/manual/en/control-structures.foreach.php" target="_blank"">Foreach</a>
                     in PHP.
                 </li>
             </ul>
