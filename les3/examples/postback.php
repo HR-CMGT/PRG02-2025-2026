@@ -1,5 +1,5 @@
 <?php
-// Check if form has been send.
+// Check if form is sent.
 if (isset($_POST['submit'])) {
     // If so, check values from our form which where posted to validate
     if ($_POST['title'] === '') {
