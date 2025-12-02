@@ -65,7 +65,7 @@
         </h3>
         <ul>
             <li>Alle velden zijn verplichte velden. Voeg server-side validatie toe</li>
-            <li>Zijn niet alle velden ingevuld, toon dan een foutmelding</li>
+            <li>Bij de velden die foutief ingevuld zijn moet een omschrijvende foutmelding getoond worden</li>
             <li>Bij een foutmelding moeten de velden die goed waren, teruggeschreven worden in het
                 formulier
             </li>
