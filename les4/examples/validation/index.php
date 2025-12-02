@@ -4,13 +4,13 @@ $emailError = '';
 
 // check op Postback
 if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
 
     // Als er niks is ingevuld in het inputveld
-    if ($_POST['email'] === '') {
+    if ($email === '') {
         // Maak een error message
         $emailError = 'Het e-mailadres moet ingevuld zijn.';
     }
-
 }
 ?>
 <!doctype html>
