@@ -33,7 +33,8 @@ Mocht je nog niet alle albums zien, klik dan op het tabblad 'Browse' / 'Verkenne
 
 Voor deze opdracht kan je gebruik maken van het voorbeeld `week5/examples/hidden-field`
 
-> Voeg aan het formulier van [opdr3-form.php](exercises/opdr3-form.php) een hidden field toe. Dmv een postback vang je
+> Voeg aan het formulier van [opdr3-form.php](exercises/opdr3-form.php) een hidden field toe. Door middel van een
+> postback vang je
 > de inhoud van het hidden field op en deze toon je vervolgens op dezelfde pagina in de HTML.
 
 ### Opdracht 4: Pseudo Code
