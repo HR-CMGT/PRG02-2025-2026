@@ -52,6 +52,11 @@ bij elkaar.
 > Maak het ERD voor bovenstaande case (bijvoorbeeld met [DrawSQL](https://drawsql.app/)). Let goed op dat de informatie
 > in de juiste tabel wordt opgeslagen en op de notatie van de relaties.
 
+Bijbehorende kennisclips:
+
+- [1-op-veel relaties in databases](https://brightspace.hr.nl/d2l/le/lessons/192816/topics/917651)
+- [Databases veel-op-veel relaties](https://brightspace.hr.nl/d2l/le/lessons/192816/topics/917652)
+
 Verder werken
 =============
 

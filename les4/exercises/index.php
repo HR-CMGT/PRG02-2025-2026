@@ -107,6 +107,11 @@
             Let goed op dat de informatie in de juiste tabel wordt opgeslagen
             en op de notatie van de relaties.
         </blockquote>
+        <p>Bijbehorende kennisclips:</p>
+        <ul>
+            <li><a href="https://brightspace.hr.nl/d2l/le/lessons/192816/topics/917651">1-op-veel relaties in databases</a></li>
+            <li><a href="https://brightspace.hr.nl/d2l/le/lessons/192816/topics/917652">Databases veel-op-veel relaties</a></li>
+        </ul>
     </div>
 </section>
 
