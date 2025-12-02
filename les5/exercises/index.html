@@ -23,12 +23,15 @@
             Opdracht 1: Form data vullen
         </h3>
         <p class="mb-4">
-            In deze opdracht ga je ervoor zorgen dat de inhoud van een formulier gevuld wordt op basis van een meegestuurd id (GET methode).
+            In deze opdracht ga je ervoor zorgen dat de inhoud van een formulier gevuld wordt op basis van een
+            meegestuurd id (GET methode).
         </p>
         <blockquote>
             <a href="opdr1-pagina1.html" target="_blank">Pagina1.html</a> linkt naar pagina2.php en stuurt id=1 mee naar
-            <a href="opdr1-pagina2.php" target="_blank">pagina2.php</a>. Vul (op pagina2.php) de betreffende velden van het formulier met de
-            data uit de database voor dit specifieke album. Het id heb je nodig in de vraag die je aan de database stelt.
+            <a href="opdr1-pagina2.php" target="_blank">pagina2.php</a>. Vul (op pagina2.php) de betreffende velden van
+            het formulier met de
+            data uit de database voor dit specifieke album. Het id heb je nodig in de vraag die je aan de database
+            stelt.
             Gebruik hiervoor de music_collection database.
         </blockquote>
 
@@ -38,8 +41,10 @@
         </h3>
         <p class="mb-4">
             Open <a href="http://phpmyadmin.test/" target="_blank">PhpMyAdmin</a> en klik op de database <a
-                href="http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection" target="_blank">music_collection</a> en vervolgens op de tabel <a
-                href="http://phpmyadmin.test/index.php?route=/table/sql&db=music_collection&table=albums" target="_blank">albums</a>.
+                href="http://phpmyadmin.test/index.php?route=/database/sql&db=music_collection" target="_blank">music_collection</a>
+            en vervolgens op de tabel <a
+                href="http://phpmyadmin.test/index.php?route=/table/sql&db=music_collection&table=albums"
+                target="_blank">albums</a>.
             Klik vervolgens op de tab 'SQL'.
         </p>
         <blockquote>
@@ -47,13 +52,17 @@
             Of The Moon) van 9 naar 10.
             Schrijf hiervoor de bijbehorende UPDATE query.
         </blockquote>
-
-        Mocht je nog niet alle albums zien, klik dan op het tabblad 'Browse' / 'Verkennen'.
+        <p>
+            Sla de query van de vorige stap ergens op, die heb je zo nog nodig.
+            <br>
+            Mocht je nog niet alle albums zien, klik dan op het tabblad 'Browse' / 'Verkennen'.
+        </p>
         <blockquote>
             Pas een willekeurig album aan door op 'Edit' te klikken (achter gele potlood icon). Verander een waarde
             en druk op 'Go' / 'Starten'
             <br>
-            Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt. Hieronder staat een query. Vergelijk
+            Zie je een groene balk met de tekst: '1 row inserted.' / '1 rij toegevoegd.', dan is het gelukt. Hieronder
+            staat een query. Vergelijk
             deze query met jouw query.
         </blockquote>
 
@@ -65,7 +74,8 @@
             Voor deze opdracht kan je gebruik maken van het voorbeeld <code>week5/examples/hidden-field</code>
         </p>
         <blockquote>
-            Voeg aan het formulier van <a href="opdr3-form.php" target="_blank">opdr3-form.php</a> een hidden field toe. Dmv een postback vang je de
+            Voeg aan het formulier van <a href="opdr3-form.php" target="_blank">opdr3-form.php</a> een hidden field toe.
+            Dmv een postback vang je de
             inhoud van het hidden field op en deze toon je vervolgens op dezelfde pagina in de HTML.
         </blockquote>
 
@@ -107,13 +117,17 @@
         <blockquote>
             Werk de updatepagina uit, zodat je een album kunt bijwerken in de database.
             <ul>
-                <li>Het formulier van de updatepagina wordt gevuld met albuminformatie van het specifieke album dat aangeklikt is op de indexpagina</li>
+                <li>Het formulier van de updatepagina wordt gevuld met albuminformatie van het specifieke album dat
+                    aangeklikt is op de indexpagina
+                </li>
                 <li>Alle velden zijn verplichte velden. Voeg server-side validatie toe</li>
                 <li>Zijn niet alle velden ingevuld, toon dan een foutmelding</li>
                 <li>Bij een foutmelding moeten de velden die goed waren, teruggeschreven worden in het formulier</li>
                 <li>
-                    Na het succesvol aanpassen van de albuminformatie moet de gebruiker doorgestuurd worden naar de indexpagina.
-                    Hiervoor kan je gebruik maken van de PHP-functie <a href="https://www.php.net/manual/en/function.header.php" target="_blank">header()</a>
+                    Na het succesvol aanpassen van de albuminformatie moet de gebruiker doorgestuurd worden naar de
+                    indexpagina.
+                    Hiervoor kan je gebruik maken van de PHP-functie <a
+                        href="https://www.php.net/manual/en/function.header.php" target="_blank">header()</a>
                 </li>
             </ul>
         </blockquote>
