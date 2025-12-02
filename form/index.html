@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Simple Bulma Form</title>
+    <!-- Bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- ...existing code... -->
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <div class="box">
+                    <h1 class="title is-4">Enter your details</h1>
+
+                    <form action="#" method="post">
+                        <!-- Name field -->
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" name="name" placeholder="e.g. Alex Johnson" required>
+                            </div>
+                        </div>
+
+                        <!-- Age field -->
+                        <div class="field">
+                            <label class="label">Age</label>
+                            <div class="control">
+                                <input class="input" type="number" name="age" min="0" placeholder="e.g. 21" required>
+                            </div>
+                            <p class="help">Enter your age in years</p>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="field is-grouped is-justify-content-flex-end">
+                            <div class="control">
+                                <button class="button is-primary" type="submit">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-light" type="reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ...existing code... -->
+</body>
+</html>
+
