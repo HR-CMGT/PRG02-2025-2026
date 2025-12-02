@@ -1,13 +1,13 @@
 <?php
 $firstName = '';
 $error = '';
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     $firstName = $_POST['first_name'];
 
-    if($firstName === '') {
+    if ($firstName === '') {
         $error = 'The first name cannot be empty';
     }
-    if($error === '') {
+    if ($error === '') {
         $query = "INSERT INTO albums (name)
                     VALUES ('$firstName')";
         echo $query;
@@ -24,14 +24,14 @@ if(isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
-    <h1>create page</h1>
-    <?= $firstName ?>
-    <form action="" method="post">
-        First name
-        <input type="text" name="first_name"/>
-        <?= $error ?>
-        <input type="submit" name="submit"/>
-    </form>
+<h1>create page</h1>
+<?= $firstName ?>
+<form action="" method="post">
+    First name
+    <input type="text" name="first_name"/>
+    <?= $error ?>
+    <input type="submit" name="submit"/>
+</form>
 </body>
 </html>
 

@@ -42,8 +42,9 @@
             </li>
         </ul>
         <blockquote>
-            In het bestand <a href="opdr1-validation.php" target="_blank">opdr1-validation.php</a> zie je een formulier. Zorg
-            ervoor dat het formulier in PHP wordt gecontroleerd (dus niet met
+            In het bestand <a href="opdr1-validation.php" target="_blank">opdr1-validation.php</a> zie je een formulier.
+            Zorg
+            ervoor dat het formulier in PHP wordt gecontroleerd (dus <strong>niet</strong> met
             het attribuut <code>required</code> in de HTML). Wanneer het veld leeg gelaten wordt, moet er een
             foutmelding
             in de HTML getoond worden.
@@ -56,7 +57,7 @@
     <div class="content">
         <p class="mb-4">
             Je hebt nu alle ingrediënten om de createpagina te kunnen maken met server-sidevalidatie. Voeg de validatie
-            toe aan de pseudocode van de vorige les en verwerkt deze dan in de createpagina. Gebruik weer de flow chart
+            toe aan de pseudocode van de vorige les en verwerk deze dan in de createpagina. Gebruik weer de flow chart
             van de createpagina uit de vorige les.
         </p>
         <h3>
@@ -75,7 +76,8 @@
         </ul>
         <h2>Tips bij de uitwerking</h2>
         <ul>
-            <li>Werk de code stap voor stap uit en ga pas verder als je vorige stap werkt (en dus door jou getest is).</li>
+            <li>Werk de code stap voor stap uit en ga pas verder als je vorige stap werkt (en dus door jou getest is).
+            </li>
             <li>Voor het doorsturen naar de indexpagina kan je gebruik maken van de PHP-functie <a
                         href="https://www.php.net/manual/en/function.header.php"
                         target="_blank">header()</a></li>
@@ -103,7 +105,7 @@
         </p>
         <blockquote>
             Maak het ERD voor bovenstaande case (bijvoorbeeld met <a href="https://drawsql.app/"
-                                                             target="_blank">DrawSQL</a>).
+                                                                     target="_blank">DrawSQL</a>).
             Let goed op dat de informatie in de juiste tabel wordt opgeslagen
             en op de notatie van de relaties.
         </blockquote>
@@ -124,10 +126,13 @@
             Maak een uitbreiding op de validatie.
             <ul>
                 <li>De bezoeker wil de foutmeldingen van de validatie niet samen boven het formulier hebben, maar elke
-                    losse foutmelding netjes onder het betreffende veld zien.</li>
+                    losse foutmelding netjes onder het betreffende veld zien.
+                </li>
                 <li>Zorg ervoor dat er niet alleen een controle plaatsvindt of het
-                    inputelement leeg is, maar bijvoorbeeld ook of het een getal, e-mailadres of een postcode is.</li>
-                <li>Maak per check een aparte foutmelding en laat alleen de eerst foutmelding per inputelement zien.</li>
+                    inputelement leeg is, maar bijvoorbeeld ook of het een getal, e-mailadres of een postcode is.
+                </li>
+                <li>Maak per check een aparte foutmelding en laat alleen de eerst foutmelding per inputelement zien.
+                </li>
                 <li>Zet de formvalidatie in een apart bestand en laadt deze in de createpagina.</li>
             </ul>
 

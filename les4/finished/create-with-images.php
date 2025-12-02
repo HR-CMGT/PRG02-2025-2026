@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     require_once "includes/form-validation.php";
 
     //Special check for add form only
-    if ($_FILES['image']['error'] == 4) {
+    if ($_FILES['image']['error'] === 4) {
         $errors['image'] = 'Image cannot be empty';
     }
 

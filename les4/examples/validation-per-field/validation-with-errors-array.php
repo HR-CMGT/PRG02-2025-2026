@@ -7,10 +7,10 @@ if (isset($_POST['submit'])) {
     $artist = $_POST['artist'];
 
     $errors = [];
-    if ($name == "") {
+    if ($name === '') {
         $errors['name'] = "Vul de naam van het album in.";
     }
-    if ($artist == "") {
+    if ($artist === '') {
         $errors['artist'] = "Vul na naam van de artiest in";
     }
 
@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 <h1>Voeg docent toe</h1>
 <?php
 if (isset($errors['db'])) {
-    echo 'Database error: '.$errors['db'];
+    echo 'Database error: ' . $errors['db'];
 } elseif (isset($success)) {
     echo $success;
 }

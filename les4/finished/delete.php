@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
     $query = "SELECT * FROM albums WHERE id = '$albumId'";
     $result = mysqli_query($db, $query);
 
-    if (mysqli_num_rows($result) == 1) {
+    if (mysqli_num_rows($result) === 1) {
         $album = mysqli_fetch_assoc($result);
     } else {
         // redirect when db returns no result

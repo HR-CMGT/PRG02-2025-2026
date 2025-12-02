@@ -40,7 +40,7 @@ function deleteImageFile($fileName)
     //Unlink/deletes the file from the server
     $removed = unlink('./images/' . $fileName);
 
-    if ($removed == false) {
+    if ($removed === false) {
         die("Something went wrong with removing the image");
     }
 

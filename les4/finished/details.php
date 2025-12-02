@@ -2,7 +2,7 @@
 /** @var mysqli $db */
 
 // redirect when uri does not contain a id
-if (!isset($_GET['id']) || $_GET['id'] == '') {
+if (!isset($_GET['id']) || $_GET['id'] === '') {
     // redirect to index.php
     header('Location: index.php');
     exit;
