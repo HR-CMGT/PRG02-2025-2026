@@ -1,6 +1,5 @@
 <?php
 if (isset($_POST['submit'])) {
-    print_r($_POST);
     $name = $_POST['name'];
     $age = $_POST['age'];
 
@@ -35,14 +34,24 @@ if (isset($_POST['submit'])) {
                 <label class="label" for="name">Name</label>
                 <input class="input" type="text" name="name" id="name" placeholder="Voer naam in..."
                        value="<?= $name ?? '' ?>">
-                <?= isset($errors['name']) ? '<p class="help is-danger">' . $errors['name'] . '</p>' : '' ?>
+
+                <?php if (isset($errors['name'])) { ?>
+                    <span class="help is-danger">
+                        <?= $errors['name'] ?>
+                    </span>
+                <?php } ?>
 
             </div>
 
             <div class="field">
                 <label class="label" for="age">Age</label>
                 <input class="input" type="number" name="age" id="age" placeholder="Voer leeftijd in (tussen 20 en 40)..." value="<?= $age ?? '' ?>">
-                <?= isset($errors['age']) ? '<p class="help is-danger">' . $errors['age'] . '</p>' : '' ?>
+
+                <?php if (isset($errors['age'])) { ?>
+                    <span class="help is-danger">
+                        <?= $errors['age'] ?>
+                    </span>
+                <?php } ?>
             </div>
 
             <button class="button" type="submit" name="submit">Verzenden</button>

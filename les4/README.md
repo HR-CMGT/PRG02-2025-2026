@@ -29,7 +29,7 @@ de vorige les.
 
 * Alle velden zijn verplichte velden. Voeg server-side validatie toe
 * Bij de velden die foutief ingevuld zijn moet een omschrijvende foutmelding getoond worden
-* Bij een foutmelding moeten de velden die goed waren, teruggeschreven worden in het formulier
+* In het geval van een foutmelding moeten de reeds ingevulde velden weer worden ingevuld
 * Na het succesvol toevoegen aan de database moet de gebruiker doorgestuurd worden naar de indexpagina.
 
 ### Tips bij de uitwerking

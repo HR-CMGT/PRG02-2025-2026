@@ -66,9 +66,7 @@
         <ul>
             <li>Alle velden zijn verplichte velden. Voeg server-side validatie toe</li>
             <li>Bij de velden die foutief ingevuld zijn moet een omschrijvende foutmelding getoond worden</li>
-            <li>Bij een foutmelding moeten de velden die goed waren, teruggeschreven worden in het
-                formulier
-            </li>
+            <li>In het geval van een foutmelding moeten de reeds ingevulde velden weer worden ingevuld</li>
             <li>
                 Na het succesvol toevoegen aan de database moet de gebruiker doorgestuurd worden naar de
                 indexpagina.
