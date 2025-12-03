@@ -3,14 +3,14 @@
 $emailError = '';
 
 // check op Postback
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
 
     // Als er niks is ingevuld in het inputveld
-    if($_POST['email'] == '') {
+    if ($email === '') {
         // Maak een error message
         $emailError = 'Het e-mailadres moet ingevuld zijn.';
     }
-
 }
 ?>
 <!doctype html>
@@ -25,19 +25,19 @@ if(isset($_POST['submit'])) {
 </head>
 <body class="container">
 
-    <section class="section">
-        <form action="" method="post">
+<section class="section">
+    <form action="" method="post">
 
-            <label for="email">Email</label>
-            <input id="email" type="text" name="email" />
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email"/>
 
-            <!--Toon hier de error. Als er geen error is, wordt de span gevuld met een lege string. Deze zie je dan niet in de website -->
-            <span><?= $emailError ?></span>
+        <!--Toon hier de error. Als er geen error is, wordt de span gevuld met een lege string. Deze zie je dan niet in de website -->
+        <span><?= $emailError ?></span>
 
-            <input type="submit" name="submit" />
+        <input type="submit" name="submit"/>
 
-        </form>
-    </section>
+    </form>
+</section>
 
 </body>
 </html>
