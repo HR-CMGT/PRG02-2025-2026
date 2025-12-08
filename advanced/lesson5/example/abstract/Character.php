@@ -5,7 +5,6 @@ abstract class Character
     public string $name;
     public int $health = 100;
 
-
     //Shared logic voor all subclasses
     public function takeDamage($amount): void
     {
