@@ -14,7 +14,7 @@ try {
     //Get students from DB
     $query = 'SELECT * FROM students';
     $studentsFromDB = $connection->query($query)
-        ->fetchAll(PDO::FETCH_CLASS, '\\StudentsList\\Persons\\Student');
+        ->fetchAll(PDO::FETCH_CLASS, '\StudentsList\Persons\Student');
 
     //Prepared statements
 //    $statement = $connection->prepare('SELECT * FROM students WHERE id = :id');
@@ -23,7 +23,7 @@ try {
 //    ]);
 //
 //    if ($statement->rowCount() == 1){
-//        print_r($statement->fetchObject('\\StudentsList\\Persons\\Student'));
+//        print_r($statement->fetchObject('\StudentsList\Persons\Student'));
 //        exit;
 //    }
 

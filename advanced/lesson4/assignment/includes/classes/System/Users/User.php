@@ -43,7 +43,7 @@ class User
         $statement = $db->prepare('SELECT * FROM users WHERE email = :email');
         $statement->execute([':email' => $email]);
 
-        if (($user = $statement->fetchObject('\\System\\Users\\User')) === false) {
+        if (($user = $statement->fetchObject('\System\Users\User')) === false) {
             throw new \Exception('User email is not available in the database');
         }
 

@@ -13,6 +13,9 @@
 - [Static](http://www.php.net/manual/en/language.oop5.static.php)
 - [PHP PSR standards](https://github.com/php-fig/fig-standards/tree/master/accepted)
 
+> **LET OP:** Voor Les 7 is een deadline (zie Brightspace) om een zelfevaluatie in te vullen. Dit doe je 
+> als voorbereiding op een proefmondeling met een andere student in les 7.
+
 ## Opdrachten
 
 ### Opdracht 1: Code lezen en vragen stellen (klassikaal)

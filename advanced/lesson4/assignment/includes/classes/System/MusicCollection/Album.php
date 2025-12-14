@@ -79,7 +79,7 @@ class Album
      */
     public static function getAll(\PDO $db): array
     {
-        return $db->query('SELECT * FROM albums')->fetchAll(\PDO::FETCH_CLASS, '\\System\\MusicCollection\\Album');
+        return $db->query('SELECT * FROM albums')->fetchAll(\PDO::FETCH_CLASS, '\System\MusicCollection\Album');
     }
 
     /**
@@ -95,7 +95,7 @@ class Album
         $statement = $db->prepare('SELECT * FROM albums WHERE id = :id');
         $statement->execute([':id' => $id]);
 
-        if (($album = $statement->fetchObject('\\System\\MusicCollection\\Album')) === false) {
+        if (($album = $statement->fetchObject('\System\MusicCollection\Album')) === false) {
             throw new \Exception('Album ID is not available in the database');
         }
 
