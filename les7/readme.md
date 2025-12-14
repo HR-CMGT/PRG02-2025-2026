@@ -20,7 +20,7 @@ Je ziet nu het profiel van de gebruiker met dat id. Ook kun je in de PHP-pagina 
 
 > Zet in de URL achter **id=** een willekeurig id (bijv. 4) en daarna de tekst `' OR '1' = '1`. Je krijgt dan de volgende link: [les7/exercises/SQL-injection.php?id=4' OR '1'='1](SQL-injection.php?id=4%27%20OR%20%271%27=%271).
 
-Je zult nu zien dat je altijd de eerste user uit de database te zien krijgt. Dit komt omdat we de SQL query beïnvloedt hebben. De query `SELECT * FROM users WHERE id='2'` haalt een specifieke user op uit de database. Maar door de toevoeging `' OR '1' = '1`, wordt de query `SELECT * FROM users WHERE id='2' OR '1'='1'`. Er staat nu: "Selecteer een gebruiker als zijn id = '2' óf als '1 = '1'" en dat laatste is altijd waar. Hierdoor worden alle users geselecteerd. De code `$user = mysqli_fetch_assoc($result);` kiest vervolgens altijd de eerste gebruiker.
+Je zult nu zien dat je altijd de eerste user uit de database te zien krijgt. Dit kun je zien aan de naam, de foto is random. Dit komt omdat we de SQL query beïnvloedt hebben. De query `SELECT * FROM users WHERE id='2'` haalt een specifieke user op uit de database. Maar door de toevoeging `' OR '1' = '1`, wordt de query `SELECT * FROM users WHERE id='2' OR '1'='1'`. Er staat nu: "Selecteer een gebruiker als zijn id = '2' óf als '1 = '1'" en dat laatste is altijd waar. Hierdoor worden alle users geselecteerd. De code `$user = mysqli_fetch_assoc($result);` kiest vervolgens altijd de eerste gebruiker.
 
 > Verderop in de PHP-pagina wordt gecheckt of er meer dan 0 resultaten zijn. Op deze pagina willen we echter altijd precies 1 user hebben. Pas de check hierop aan en bezoek daarna nogmaals bovenstaande link.
 

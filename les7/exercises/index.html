@@ -65,7 +65,8 @@
              <a href="SQL-injection.php?id=4%27%20OR%20%271%27=%271" target="_blank">les7/exercises/SQL-injection.php?id=4' OR '1'='1</a>.
         </blockquote>
         <p class="mb-4">
-            Je zult nu zien dat je altijd de eerste user uit de database te zien krijgt. Dit komt omdat we de SQL query
+            Je zult nu zien dat je altijd de eerste user uit de database te zien krijgt. Dit kun je zien aan de naam, de foto is random.
+            Dit komt omdat we de SQL query
             beïnvloedt hebben. De query <code>SELECT * FROM users WHERE id='4'</code> haalt een specifieke user op uit de
             database. Maar door de toevoeging <code>' OR '1' = '1</code>, wordt de query <code>SELECT * FROM users WHERE id='4' OR '1'='1'</code>.
             Er staat nu: "Selecteer een gebruiker als zijn id = '4' óf als '1 = '1'" en dat laatste is altijd waar. Hierdoor
