@@ -3,7 +3,7 @@
 require_once 'includes/database.php';
 
 // redirect when uri does not contain a id
-if(!isset($_GET['id']) || $_GET['id'] == '') {
+if (!isset($_GET['id']) || $_GET['id'] == '') {
     // redirect to index.php
     header('Location: index.php');
     exit;
@@ -15,7 +15,7 @@ $sql = "SELECT * FROM users WHERE id='$id'";
 $result = mysqli_query($db, $sql);
 
 // Let op! verwacht je maar 1 resultaat, doe dan ook deze check ( == 1)
-if(mysqli_num_rows($result) > 0) {
+if (mysqli_num_rows($result) > 0) {
     $user = mysqli_fetch_assoc($result);
 } else {
     $error = "No user can be selected with id = $id";
@@ -30,7 +30,7 @@ if(mysqli_num_rows($result) > 0) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <title>Registreren</title>
+    <title>User profile</title>
     <script>
         // when click on delete button, remove notification
         document.addEventListener('DOMContentLoaded', () => {
@@ -48,7 +48,7 @@ if(mysqli_num_rows($result) > 0) {
         <h2 class="title">
             Profile
         </h2>
-        <?php if(isset($error)) { ?>
+        <?php if (isset($error)) { ?>
             <div class="notification is-danger">
                 <button class="delete"></button>
                 <?= $error ?>
@@ -60,10 +60,10 @@ if(mysqli_num_rows($result) > 0) {
             <div class="column is-one-third">
                 <div class="card">
                     <div class="card-header-icon">
-                        <?php if(isset($user['first_name'])) { ?>
-                        <figure>
-                            <img src="https://thispersondoesnotexist.com/" alt=""/>
-                        </figure>
+                        <?php if (isset($user['first_name'])) { ?>
+                            <figure>
+                                <img src="https://thispersondoesnotexist.com/" alt=""/>
+                            </figure>
                         <?php } else { ?>
                             <i class="fa-solid fa-user-slash fa-3x"></i>
                             not found
