@@ -104,7 +104,7 @@ class Logger
     /**
      * @param \Exception $e
      */
-    public function error(\Exception $e): void
+    public function error(\Throwable $e): void
     {
         $date = date('d-m-Y H:i');
         $message = "[{$date}] {$e->getMessage()} on line {$e->getLine()} of {$e->getFile()}" . PHP_EOL;

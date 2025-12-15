@@ -1,12 +1,12 @@
-<?php namespace System\Handlers;
+<?php namespace MusicCollection\Handlers;
 
-use System\Form\Data;
-use System\Form\Validation\LoginValidator;
-use System\Databases\Objects\User;
+use MusicCollection\Form\Data;
+use MusicCollection\Form\Validation\LoginValidator;
+use MusicCollection\Databases\Objects\User;
 
 /**
  * Class AccountHandler
- * @package System\Handlers
+ * @package MusicCollection\Handlers
  * @noinspection PhpUnused
  */
 class AccountHandler extends BaseHandler
@@ -20,7 +20,7 @@ class AccountHandler extends BaseHandler
     {
         //If already logged in, no need to be here
         if ($this->session->keyExists('user')) {
-            header('Location: create');
+            header('Location: ' . BASE_PATH);
             exit;
         }
 
@@ -50,7 +50,8 @@ class AccountHandler extends BaseHandler
         //When no error, set session variable, redirect & exit script
         if (isset($user) && empty($this->errors)) {
             $this->session->set('user', $user);
-            header('Location: create');
+            $location = BASE_PATH . ($_GET['location'] ?? '');
+            header('Location: ' . $location);
             exit;
         }
 
@@ -70,7 +71,7 @@ class AccountHandler extends BaseHandler
     protected function logout(): void
     {
         $this->session->destroy();
-        header('Location: login');
+        header('Location: ' . BASE_PATH);
         exit;
     }
 
