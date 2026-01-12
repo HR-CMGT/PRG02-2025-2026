@@ -1,17 +1,19 @@
-<?php namespace System\Handlers;
+<?php namespace MusicCollection\Handlers;
 
-use System\Form\Data;
-use System\Databases\Objects\Album;
-use System\Utils\Image;
+use MusicCollection\Databases\Objects\Artist;
+use MusicCollection\Databases\Objects\Genre;
+use MusicCollection\Form\Data;
+use MusicCollection\Databases\Objects\Album;
+use MusicCollection\Utils\Image;
 
 /**
  * Class AlbumHandler
- * @package System\Handlers
+ * @package MusicCollection\Handlers
  * @noinspection PhpUnused
  */
 class AlbumHandler extends BaseHandler
 {
-    use AlbumFillAndValidate;
+    use FillAndValidate\Album;
 
     private Album $album;
     private Data $formData;
@@ -46,7 +48,7 @@ class AlbumHandler extends BaseHandler
     {
         //If not logged in, redirect to login
         if (!$this->session->keyExists('user')) {
-            header('Location: login');
+            header('Location: ' . BASE_PATH . 'user/login?location=albums/create');
             exit;
         }
 
@@ -69,7 +71,11 @@ class AlbumHandler extends BaseHandler
 
             //Save the record to the db
             if ($this->album->save()) {
-                $success = 'Your new album has been created in the database!';
+                if ($this->album->saveGenres()) {
+                    $success = 'Your new album has been created in the database!';
+                } else {
+                    Album::delete($this->album->id);
+                }
                 //Override to see a new empty form
                 $this->album = new Album();
             } else {
@@ -81,6 +87,9 @@ class AlbumHandler extends BaseHandler
         $this->renderTemplate([
             'pageTitle' => 'Create album',
             'album' => $this->album,
+            'artists' => Artist::getAll(),
+            'genres' => Genre::getAll(),
+            'genreIds' => $this->album->getGenreIds(),
             'success' => $success ?? false,
             'errors' => $this->errors
         ]);
@@ -91,6 +100,7 @@ class AlbumHandler extends BaseHandler
         try {
             //Get the record from the db & execute POST logic
             $this->album = Album::getById((int)$_GET['id']);
+            $this->album->setGenreIds(array_map(fn(Genre $genre) => $genre->id, $this->album->getGenres()));
             $this->executePostHandler();
 
             //Database magic when no errors are found
@@ -106,7 +116,11 @@ class AlbumHandler extends BaseHandler
 
                 //Save the record to the db
                 if ($this->album->save()) {
-                    $success = 'Your album has been updated in the database!';
+                    if ($this->album->saveGenres()) {
+                        $success = 'Your album has been updated in the database!';
+                    } else {
+                        $this->errors[] = 'Whoops, something went wrong updating the genres of the album';
+                    }
                 } else {
                     $this->errors[] = 'Whoops, something went wrong updating the album';
                 }
@@ -123,6 +137,9 @@ class AlbumHandler extends BaseHandler
         $this->renderTemplate([
             'pageTitle' => $pageTitle,
             'album' => $this->album ?? null,
+            'artists' => Artist::getAll(),
+            'genres' => Genre::getAll(),
+            'genreIds' => $this->album->getGenreIds(),
             'success' => $success ?? false,
             'errors' => $this->errors
         ]);
@@ -169,7 +186,7 @@ class AlbumHandler extends BaseHandler
                     $this->image->delete($album->image);
 
                     //Redirect to homepage after deletion & exit script
-                    header('Location: ' . BASE_PATH);
+                    header('Location: ' . BASE_PATH . 'albums');
                     exit;
                 }
             }
@@ -183,7 +200,7 @@ class AlbumHandler extends BaseHandler
         } catch (\Throwable $e) {
             //We don't want anyone sniffing the delete page for no reason, so without correct parameters, return back
             $this->logger->error($e);
-            header('Location: ' . BASE_PATH);
+            header('Location: ' . BASE_PATH . 'albums');
             exit;
         }
     }

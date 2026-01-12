@@ -1,28 +1,32 @@
 <?php /** @noinspection SqlResolve */
 
-namespace System\Databases;
+namespace MusicCollection\Databases;
 
-use System\Utils\Logger;
+use MusicCollection\Utils\Logger;
 
 /**
  * Class BaseObject
- * @package System\Databases
+ * @package MusicCollection\Databases
+ * @property null|int $id
+ *
  * @example To extend this class use the following format with nullable ID and empty default values
  *  class MyObject extends BaseObject
  *  {
  *      protected static string $table = '<name_of_table>';
+ *      protected static array $joinForeignKeys = [];
  *
  *      public ?int $id = null;
  *      public string $name = "";
  *  }
- * @TODO Add support for relationships
  */
 abstract class BaseObject
 {
     protected static string $table = '';
+    protected static array $joinForeignKeys = [];
     private string $tableName;
     protected \PDO $db;
     private Logger $logger;
+    private array $dynamicProperties = [];
 
     /**
      * BaseObject constructor.
@@ -62,6 +66,29 @@ abstract class BaseObject
         foreach ($data as $key => $value) {
             $this->{$key} = $value;
         }
+    }
+
+    /**
+     * PHP8.2 fix for dynamic properties
+     *
+     * @param string $name
+     * @param $value
+     * @return void
+     */
+    public function __set(string $name, $value): void
+    {
+        $this->dynamicProperties[$name] = $value;
+    }
+
+    /**
+     * PHP8.2 fix for dynamic properties
+     *
+     * @param string $name
+     * @return mixed
+     */
+    public function __get(string $name): mixed
+    {
+        return $this->dynamicProperties[$name];
     }
 
     /**
@@ -155,8 +182,10 @@ abstract class BaseObject
     {
         $db = Database::getInstance();
         $tableName = static::$table;
+        $select = "$tableName.*";
+        $joinQuery = self::getJoinQuery($select);
 
-        return $db->query("SELECT * FROM `{$tableName}`")->fetchAll(\PDO::FETCH_CLASS, get_called_class());
+        return $db->query("SELECT {$select} FROM `{$tableName}`{$joinQuery}")->fetchAll(\PDO::FETCH_CLASS, get_called_class());
     }
 
     /**
@@ -168,8 +197,10 @@ abstract class BaseObject
     {
         $db = Database::getInstance();
         $tableName = static::$table;
+        $select = "$tableName.*";
+        $joinQuery = self::getJoinQuery($select);
 
-        $statement = $db->prepare("SELECT * FROM `{$tableName}` WHERE `id` = :id");
+        $statement = $db->prepare("SELECT {$select} FROM `{$tableName}`{$joinQuery} WHERE `{$tableName}`.`id` = :id");
         $statement->execute([':id' => $id]);
 
         if (($object = $statement->fetchObject(get_called_class())) === false) {
@@ -177,5 +208,28 @@ abstract class BaseObject
         }
 
         return $object;
+    }
+
+    /**
+     * @param string $select
+     * @return string
+     * @throws \ReflectionException
+     */
+    private static function getJoinQuery(string &$select): string
+    {
+        $tableName = static::$table;
+        $joinQuery = '';
+
+        foreach (static::$joinForeignKeys as $joinForeignKey => $properties) {
+            $reflect = new \ReflectionClass(new $properties['object']);
+            $fields = $reflect->getProperties(\ReflectionProperty::IS_PUBLIC);
+            foreach ($fields as $field) {
+                $select .= ", {$properties['table']}.{$field->name} AS {$properties['table']}_{$field->name}";
+            }
+
+            $joinQuery .= " LEFT JOIN `{$properties['table']}` ON `{$properties['table']}`.`id` = `{$tableName}`.`{$joinForeignKey}`";
+        }
+
+        return $joinQuery;
     }
 }

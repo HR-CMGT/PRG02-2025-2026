@@ -1,8 +1,8 @@
-<?php namespace System\Utils;
+<?php namespace MusicCollection\Utils;
 
 /**
  * Class Logger
- * @package System\Utils
+ * @package MusicCollection\Utils
  */
 class Logger
 {
